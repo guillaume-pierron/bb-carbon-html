@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Réalisations — B&B Carbon</title>
+  <meta name="description" content="Découvrez les réalisations B&B Carbon : habillages intérieur, pièces extérieur et objets custom en fibre de carbone." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="images/logo_noir.svg" alt="B&B Carbon" /></a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="realisations.html" class="nav-link">Réalisations</a>
+        <a href="a-propos.html" class="nav-link">À Propos</a>
+        <a href="contact.html" class="nav-link nav-cta btn btn-primary btn-sm">Devis Gratuit</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html" class="nav-link">Accueil</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="realisations.html" class="nav-link">Réalisations</a>
+    <a href="a-propos.html" class="nav-link">À Propos</a>
+    <a href="contact.html" class="nav-link">Devis</a>
+  </div>
+
+  <!-- EN-TÊTE -->
+  <section class="page-header">
+    <div class="container animate-in">
+      <span class="label">Portfolio</span>
+      <h1 class="section-title">Nos <span class="text-gold">réalisations</span></h1>
+      <p>Chaque projet est unique. Découvrez quelques exemples de notre travail : intérieur, extérieur, et objets custom.</p>
+    </div>
+  </section>
+
+  <!-- GALERIE -->
+  <section class="realisations-section">
+    <div class="container">
+      <!-- Filtres -->
+      <div class="filter-bar animate-in">
+        <button class="filter-btn active" data-cat="Tous">Tous</button>
+        <button class="filter-btn" data-cat="Intérieur">Intérieur</button>
+        <button class="filter-btn" data-cat="Extérieur">Extérieur</button>
+        <button class="filter-btn" data-cat="Custom">Custom</button>
+      </div>
+
+      <!-- Grille projets -->
+      <div class="projects-grid">
+
+        <div class="project-card wide animate-in" data-category="Intérieur">
+          <div class="project-visual">
+            <div class="project-visual-pattern"></div>
+            <div class="project-visual-diamond"></div>
+            <span class="project-category-badge interior">Intérieur</span>
+            <div class="project-hover-overlay"></div>
+          </div>
+          <div class="project-info">
+            <h3>Habillage volant BMW M3</h3>
+            <p>Recouvrement complet en carbone 2×2, finition brillante</p>
+            <div class="project-tags">
+              <span class="project-tag">Volant</span>
+              <span class="project-tag">BMW</span>
+              <span class="project-tag">Brillant</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card animate-in" data-category="Extérieur" data-delay="60">
+          <div class="project-visual">
+            <div class="project-visual-pattern"></div>
+            <div class="project-visual-diamond"></div>
+            <span class="project-category-badge exterior">Extérieur</span>
+            <div class="project-hover-overlay"></div>
+          </div>
+          <div class="project-info">
+            <h3>Diffuseur Audi RS</h3>
+            <p>Diffuseur arrière sur-mesure, carbone 3K mat</p>
+            <div class="project-tags">
+              <span class="project-tag">Diffuseur</span>
+              <span class="project-tag">Audi</span>
+              <span class="project-tag">Mat</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card animate-in" data-category="Custom" data-delay="120">
+          <div class="project-visual">
+            <div class="project-visual-pattern"></div>
+            <div class="project-visual-diamond"></div>
+            <span class="project-category-badge custom">Custom</span>
+            <div class="project-hover-overlay"></div>
+          </div>
+          <div class="project-info">
+            <h3>Manette Xbox Custom</h3>
+            <p>Recouvrement carbone et cuir, édition unique</p>
+            <div class="project-tags">
+              <span class="project-tag">Gaming</span>
+              <span class="project-tag">Custom</span>
+              <span class="project-tag">Unique</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card animate-in" data-category="Intérieur" data-delay="180">
+          <div class="project-visual">
+            <div class="project-visual-pattern"></div>
+            <div class="project-visual-diamond"></div>
+            <span class="project-category-badge interior">Intérieur</span>
+            <div class="project-hover-overlay"></div>
+          </div>
+          <div class="project-info">
+            <h3>Console centrale Porsche</h3>
+            <p>Console centrale entière habillée carbone</p>
+            <div class="project-tags">
+              <span class="project-tag">Console</span>
+              <span class="project-tag">Porsche</span>
+              <span class="project-tag">Sur-mesure</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card animate-in" data-category="Extérieur" data-delay="240">
+          <div class="project-visual">
+            <div class="project-visual-pattern"></div>
+            <div class="project-visual-diamond"></div>
+            <span class="project-category-badge exterior">Extérieur</span>
+            <div class="project-hover-overlay"></div>
+          </div>
+          <div class="project-info">
+            <h3>Coques de rétroviseurs</h3>
+            <p>Rétroviseurs carbone 2×2 brillant, paire complète</p>
+            <div class="project-tags">
+              <span class="project-tag">Rétros</span>
+              <span class="project-tag">Extérieur</span>
+              <span class="project-tag">Brillant</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card tall animate-in" data-category="Extérieur" data-delay="300">
+          <div class="project-visual">
+            <div class="project-visual-pattern"></div>
+            <div class="project-visual-diamond"></div>
+            <span class="project-category-badge exterior">Extérieur</span>
+            <div class="project-hover-overlay"></div>
+          </div>
+          <div class="project-info">
+            <h3>Aileron GT sur-mesure</h3>
+            <p>Aileron arrière GT conçu et fabriqué de zéro</p>
+            <div class="project-tags">
+              <span class="project-tag">Aileron</span>
+              <span class="project-tag">Création</span>
+              <span class="project-tag">GT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card wide animate-in" data-category="Intérieur" data-delay="360">
+          <div class="project-visual">
+            <div class="project-visual-pattern"></div>
+            <div class="project-visual-diamond"></div>
+            <span class="project-category-badge interior">Intérieur</span>
+            <div class="project-hover-overlay"></div>
+          </div>
+          <div class="project-info">
+            <h3>Tableau de bord Maserati</h3>
+            <p>Habillage complet tableau de bord, 12 pièces</p>
+            <div class="project-tags">
+              <span class="project-tag">Dashboard</span>
+              <span class="project-tag">Maserati</span>
+              <span class="project-tag">Complet</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card animate-in" data-category="Custom" data-delay="420">
+          <div class="project-visual">
+            <div class="project-visual-pattern"></div>
+            <div class="project-visual-diamond"></div>
+            <span class="project-category-badge custom">Custom</span>
+            <div class="project-hover-overlay"></div>
+          </div>
+          <div class="project-info">
+            <h3>Casque moto custom</h3>
+            <p>Casque intégral recouvert carbone et design personnalisé</p>
+            <div class="project-tags">
+              <span class="project-tag">Moto</span>
+              <span class="project-tag">Casque</span>
+              <span class="project-tag">Custom</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card animate-in" data-category="Extérieur" data-delay="480">
+          <div class="project-visual">
+            <div class="project-visual-pattern"></div>
+            <div class="project-visual-diamond"></div>
+            <span class="project-category-badge exterior">Extérieur</span>
+            <div class="project-hover-overlay"></div>
+          </div>
+          <div class="project-info">
+            <h3>Prise d'air capot</h3>
+            <p>Prise d'air bonnet sur-mesure, carbone 3K</p>
+            <div class="project-tags">
+              <span class="project-tag">Capot</span>
+              <span class="project-tag">Air</span>
+              <span class="project-tag">3K</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="no-results" class="no-results" style="display:none;">Aucun projet dans cette catégorie.</div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" style="border-top:1px solid var(--gray-200); background:var(--gray-50);">
+    <div class="animate-in">
+      <h2 style="color:var(--zinc-900);">Votre projet sera le prochain</h2>
+      <p>Décrivez-nous votre idée et obtenez un devis gratuit.</p>
+      <a href="contact.html" class="btn btn-primary">Lancer Mon Projet <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-cta">
+      <div class="footer-cta-inner">
+        <div><h3>Votre projet en carbone commence ici</h3><p>Devis gratuit et personnalisé sous 48h</p></div>
+        <a href="contact.html" class="btn-white">Demander un Devis</a>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="footer-brand">
+        <img src="images/logo.svg" alt="B&B Carbon" />
+        <p>Fabrication artisanale de pièces en fibre de carbone sur-mesure.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#creation">Création Sur-Mesure</a></li>
+          <li><a href="services.html#recouvrement">Recouvrement Carbone</a></li>
+          <li><a href="services.html#reparation">Réparation</a></li>
+          <li><a href="services.html#custom">Objets Custom</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="realisations.html">Nos Réalisations</a></li>
+          <li><a href="a-propos.html">À Propos</a></li>
+          <li><a href="contact.html">Demande de Devis</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:contact@bbcarbon.fr"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M4 4l8 9 8-9"/></svg>contact@bbcarbon.fr</a></li>
+          <li><a href="tel:+33600000000"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>+33 6 00 00 00 00</a></li>
+          <li><span><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>France</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span class="footer-year"></span> B&B Carbon. Tous droits réservés.</p>
+      <p>Fabrication artisanale · Qualité premium · Sur-mesure</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

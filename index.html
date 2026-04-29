@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B&B Carbon — Pièces en Fibre de Carbone Sur-Mesure</title>
+  <meta name="description" content="B&B Carbon fabrique des pièces en fibre de carbone sur-mesure pour l'intérieur et l'extérieur automobile. Création, réparation et recouvrement carbone." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" role="navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="B&B Carbon — Accueil">
+        <img src="images/logo_noir.svg" alt="B&B Carbon" />
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="realisations.html" class="nav-link">Réalisations</a>
+        <a href="a-propos.html" class="nav-link">À Propos</a>
+        <a href="contact.html" class="nav-link nav-cta btn btn-primary btn-sm">Devis Gratuit</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MENU MOBILE -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Menu navigation">
+    <a href="index.html" class="nav-link">Accueil</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="realisations.html" class="nav-link">Réalisations</a>
+    <a href="a-propos.html" class="nav-link">À Propos</a>
+    <a href="contact.html" class="nav-link">Devis</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Bannière principale">
+    <div class="hero-bg" id="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <div class="hero-badge-dot"></div>
+        <span>Fabrication artisanale · France</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="line-white">L'ART DU</span>
+        <span class="line-dim">CARBONE</span>
+        <span class="line-white">SUR-MESURE</span>
+      </h1>
+      <p class="hero-desc">
+        Pièces en fibre de carbone fabriquées à la main pour sublimer votre automobile.
+        Intérieur, extérieur, et objets uniques — chaque réalisation est une signature.
+      </p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-primary">
+          Demander un Devis
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="realisations.html" class="btn-hero-secondary">
+          Voir les Réalisations
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Découvrir</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats" aria-label="Chiffres clés">
+    <div class="stats-grid">
+      <div class="stat animate-in">
+        <span class="stat-value">100%</span>
+        <span class="stat-label">Sur-Mesure</span>
+      </div>
+      <div class="stat animate-in" data-delay="100">
+        <span class="stat-value">+5 ans</span>
+        <span class="stat-label">D'Expérience</span>
+      </div>
+      <div class="stat animate-in" data-delay="200">
+        <span class="stat-value">200+</span>
+        <span class="stat-label">Projets Réalisés</span>
+      </div>
+      <div class="stat animate-in" data-delay="300">
+        <span class="stat-value">48h</span>
+        <span class="stat-label">Réponse Devis</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services-section" aria-labelledby="services-title">
+    <div class="services-bg-logo" aria-hidden="true">
+      <img src="images/logo_noir.svg" alt="" />
+    </div>
+    <div class="container" style="position:relative;">
+      <div class="section-header animate-in">
+        <div>
+          <span class="label">Notre Expertise</span>
+          <h2 class="section-title" id="services-title">Ce que nous<br><span class="text-gold">fabriquons</span></h2>
+        </div>
+        <a href="services.html" class="section-link">
+          Tous les services
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="services-grid">
+        <a href="services.html#creation" class="service-card animate-in">
+          <div class="service-img-wrap">
+            <img src="images/volant_large.png" alt="Création Sur-Mesure" class="service-img" />
+          </div>
+          <span class="service-num">01</span>
+          <h3>Création Sur-Mesure</h3>
+          <p>Fabrication de pièces carbone uniques selon vos spécifications exactes. Chaque projet est pensé et réalisé de A à Z.</p>
+          <div class="service-more">
+            En savoir plus
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+        <a href="services.html#reparation" class="service-card animate-in" data-delay="100">
+          <div class="service-img-wrap">
+            <img src="images/board.png" alt="Réparation" class="service-img" />
+          </div>
+          <span class="service-num">02</span>
+          <h3>Réparation & Restauration</h3>
+          <p>Remise en état de vos pièces carbone existantes. Réparation de fissures, éclats, et défauts de surface.</p>
+          <div class="service-more">
+            En savoir plus
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+        <a href="services.html#recouvrement" class="service-card animate-in" data-delay="200">
+          <div class="service-img-wrap">
+            <img src="images/volant.png" alt="Recouvrement Carbone" class="service-img" />
+          </div>
+          <span class="service-num">03</span>
+          <h3>Recouvrement Carbone</h3>
+          <p>Habillage de vos pièces existantes avec du tissu carbone véritable. Transformation rapide et haute qualité.</p>
+          <div class="service-more">
+            En savoir plus
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+        <a href="services.html#custom" class="service-card animate-in" data-delay="300">
+          <div class="service-img-wrap">
+            <img src="images/xbox.png" alt="Custom & Objets Uniques" class="service-img" />
+          </div>
+          <span class="service-num">04</span>
+          <h3>Custom & Objets Uniques</h3>
+          <p>Au-delà de l'auto : manettes, objets déco, accessoires. Tout ce qui peut être sublimé par le carbone.</p>
+          <div class="service-more">
+            En savoir plus
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIE -->
+  <section class="gallery-section" aria-labelledby="gallery-title">
+    <div class="container">
+      <div class="section-center animate-in">
+        <span class="label">Nos Réalisations</span>
+        <h2 class="section-title" id="gallery-title">Quelques <span class="text-gold">projets</span></h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item animate-in">
+          <img src="images/volant.png" alt="Habillage de volant" loading="lazy" />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <span class="gallery-cat">Intérieur</span>
+            <span class="gallery-title">Habillage de volant</span>
+          </div>
+          <div class="gallery-hover"><span class="gallery-see">Voir</span></div>
+        </div>
+        <div class="gallery-item animate-in" data-delay="120">
+          <img src="images/board.png" alt="Tableau de bord" loading="lazy" />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <span class="gallery-cat">Extérieur</span>
+            <span class="gallery-title">Tableau de bord</span>
+          </div>
+          <div class="gallery-hover"><span class="gallery-see">Voir</span></div>
+        </div>
+        <div class="gallery-item animate-in" data-delay="240">
+          <img src="images/xbox.png" alt="Manette Xbox" loading="lazy" />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <span class="gallery-cat">Custom</span>
+            <span class="gallery-title">Manette Xbox</span>
+          </div>
+          <div class="gallery-hover"><span class="gallery-see">Voir</span></div>
+        </div>
+        <div class="gallery-item animate-in" data-delay="360">
+          <img src="images/boite.png" alt="Boîte sur-mesure" loading="lazy" />
+          <div class="gallery-overlay"></div>
+          <div class="gallery-info">
+            <span class="gallery-cat">Custom</span>
+            <span class="gallery-title">Boîte sur-mesure</span>
+          </div>
+          <div class="gallery-hover"><span class="gallery-see">Voir</span></div>
+        </div>
+      </div>
+      <div class="section-center animate-in">
+        <a href="realisations.html" class="btn btn-secondary">
+          Voir Toutes les Réalisations
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALEURS -->
+  <section class="values-section" aria-labelledby="values-title">
+    <div class="container">
+      <div class="values-grid">
+        <div class="values-text animate-in from-left">
+          <span class="label">Pourquoi B&B Carbon</span>
+          <h2 class="section-title" id="values-title">L'excellence<br><span class="text-gold">artisanale</span><br>au service de votre vision</h2>
+          <p>Chez B&B Carbon, chaque projet est abordé comme une œuvre unique. Nous combinons techniques de fabrication professionnelles et attention au détail pour livrer des pièces qui dépassent les attentes.</p>
+          <a href="a-propos.html" class="btn btn-ghost">
+            Notre Histoire
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="value-cards animate-in from-right">
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <h3>Qualité Artisanale</h3>
+              <p>Chaque pièce est fabriquée à la main avec des matériaux haut de gamme sélectionnés avec soin.</p>
+            </div>
+          </div>
+          <div class="value-card" data-delay="100">
+            <div class="value-icon">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3l1.09 3.26L16 7l-2.91 2.09L14 13l-2-1.5L10 13l.91-3.91L8 7l2.91-.74L12 3z"/></svg>
+            </div>
+            <div>
+              <h3>Sur-Mesure Total</h3>
+              <p>Aucune pièce identique. Votre projet est unique, notre approche l'est aussi.</p>
+            </div>
+          </div>
+          <div class="value-card" data-delay="200">
+            <div class="value-icon">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div>
+              <h3>Suivi Personnalisé</h3>
+              <p>Communication directe du début à la livraison. Vous êtes informé à chaque étape.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" aria-labelledby="cta-title">
+    <div class="animate-in">
+      <span class="label">Commencez votre projet</span>
+      <h2 id="cta-title">Votre projet,<br><span class="text-gold">notre expertise</span></h2>
+      <p>Décrivez-nous votre idée. Véhicule, pièce, style — nous vous proposons une solution sur-mesure et un devis gratuit sous 48h.</p>
+      <a href="contact.html" class="btn btn-primary">
+        Démarrer Mon Projet
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-cta">
+      <div class="footer-cta-inner">
+        <div>
+          <h3>Votre projet en carbone commence ici</h3>
+          <p>Devis gratuit et personnalisé sous 48h</p>
+        </div>
+        <a href="contact.html" class="btn-white">Demander un Devis</a>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="footer-brand">
+        <img src="images/logo.svg" alt="B&B Carbon" />
+        <p>Fabrication artisanale de pièces en fibre de carbone sur-mesure. Intérieur, extérieur, objets uniques — chaque pièce est une œuvre de précision.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#creation">Création Sur-Mesure</a></li>
+          <li><a href="services.html#recouvrement">Recouvrement Carbone</a></li>
+          <li><a href="services.html#reparation">Réparation</a></li>
+          <li><a href="services.html#custom">Objets Custom</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="realisations.html">Nos Réalisations</a></li>
+          <li><a href="a-propos.html">À Propos</a></li>
+          <li><a href="contact.html">Demande de Devis</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>
+            <a href="mailto:contact@bbcarbon.fr">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M4 4l8 9 8-9"/></svg>
+              contact@bbcarbon.fr
+            </a>
+          </li>
+          <li>
+            <a href="tel:+33600000000">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              +33 6 00 00 00 00
+            </a>
+          </li>
+          <li>
+            <span>
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              France
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span class="footer-year"></span> B&B Carbon. Tous droits réservés.</p>
+      <p>Fabrication artisanale · Qualité premium · Sur-mesure</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
