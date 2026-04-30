@@ -8,6 +8,30 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Nav sombre par défaut sur le hero */
+    .nav { background: transparent; border-bottom-color: transparent; }
+    .nav-logo img { filter: brightness(0) invert(1); }
+    .nav-link { color: rgba(255,255,255,0.78); }
+    .nav-link:hover { color: #fff; }
+    .nav-link::after { background: rgba(255,255,255,0.5); }
+    .nav-link.active { color: #fff; }
+    .nav-link.active::after { background: rgba(255,255,255,0.5); }
+    .nav-cta.btn-primary { background: #fff; color: #000; }
+    .nav-cta.btn-primary:hover { background: rgba(255,255,255,0.9); box-shadow: none; }
+    .nav-toggle .bar { background: #fff; }
+    /* Nav blanche après scroll */
+    .nav.scrolled { background: #fff; border-bottom-color: var(--gray-200); }
+    .nav.scrolled .nav-logo img { filter: none; }
+    .nav.scrolled .nav-link { color: var(--gray-600); }
+    .nav.scrolled .nav-link:hover { color: var(--zinc-900); }
+    .nav.scrolled .nav-link::after { background: linear-gradient(to right, var(--gold), transparent); }
+    .nav.scrolled .nav-link.active { color: var(--gold); }
+    .nav.scrolled .nav-link.active::after { background: linear-gradient(to right, var(--gold), transparent); }
+    .nav.scrolled .nav-cta.btn-primary { background: #000; color: #fff; }
+    .nav.scrolled .nav-cta.btn-primary:hover { background: #222; box-shadow: 0 4px 16px rgba(0,0,0,0.35); }
+    .nav.scrolled .nav-toggle .bar { background: var(--zinc-900); }
+  </style>
 </head>
 <body>
 
@@ -361,5 +385,14 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script>
+    (function () {
+      var nav = document.querySelector('.nav');
+      if (!nav) return;
+      function update() { nav.classList.toggle('scrolled', window.scrollY > 60); }
+      window.addEventListener('scroll', update, { passive: true });
+      update();
+    })();
+  </script>
 </body>
 </html>
