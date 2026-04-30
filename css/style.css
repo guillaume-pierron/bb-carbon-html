@@ -382,6 +382,9 @@ ul { list-style: none; }
   line-height: 0.95;
   margin-bottom: 1.5rem;
 }
+@media (max-width: 640px) {
+  .hero-title { font-size: clamp(3.5rem, 16vw, 5rem); }
+}
 .hero-title .line-white { display: block; color: #fff; }
 .hero-title .line-dim { display: block; color: rgba(255,255,255,0.4); }
 
