@@ -25,13 +25,14 @@
 
 /* Reset */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 body {
   background: #fff;
   color: var(--zinc-900);
   font-family: 'Inter', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 img { max-width: 100%; display: block; }
 a { text-decoration: none; color: inherit; }
@@ -86,6 +87,7 @@ ul { list-style: none; }
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -202,7 +204,10 @@ ul { list-style: none; }
 .nav-link.active { color: var(--gold); }
 .nav-link.active::after { width: 100%; }
 
-.nav-cta { margin-left: 1rem; }
+.nav-cta { margin-left: 1rem; padding-top: 1rem; padding-bottom: 1rem; }
+.nav-cta.btn-primary { background: #000; color: #fff; }
+.nav-cta.btn-primary:hover { background: #222; box-shadow: 0 4px 16px rgba(0,0,0,0.35); }
+.nav-cta::after { display: none !important; }
 
 .nav-toggle {
   display: none;
@@ -271,15 +276,30 @@ ul { list-style: none; }
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.72) 50%, rgba(0,0,0,0.45) 100%);
+  background: rgba(0,0,0,0.65);
 }
 
 .hero-content {
   position: relative;
   padding: 8rem var(--px) 6rem;
-  max-width: var(--max-w);
-  margin: 0 auto;
   width: 100%;
+  text-align: center;
+}
+
+.hero-inner {
+  display: inline-block;
+  text-align: left;
+  max-width: 100%;
+}
+
+@media (max-width: 640px) {
+  .hero-content {
+    text-align: left;
+  }
+  .hero-inner {
+    display: block;
+    width: 100%;
+  }
 }
 
 .hero-badge {
@@ -306,7 +326,7 @@ ul { list-style: none; }
 }
 
 .hero-title {
-  font-size: clamp(3rem, 10vw, 7rem);
+  font-size: clamp(2rem, 8vw, 6rem);
   font-weight: 900;
   letter-spacing: -0.04em;
   line-height: 0.95;
@@ -327,6 +347,17 @@ ul { list-style: none; }
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+@media (max-width: 480px) {
+  .hero-actions {
+    flex-direction: column;
+  }
+  .hero-actions .btn,
+  .hero-actions .btn-hero-secondary {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 .btn-hero-secondary {
