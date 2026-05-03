@@ -878,7 +878,7 @@ footer {
    ============================================================ */
 .services-hero {
   position: relative;
-  min-height: 72vh;
+  min-height: 48vh;
   background: #080808;
   display: flex;
   flex-direction: column;
@@ -908,7 +908,7 @@ footer {
   align-items: center;
   position: relative;
   z-index: 4;
-  padding: calc(70px + 4rem) var(--px) 3rem;
+  padding: calc(70px + 2rem) var(--px) 2rem;
   position: relative;
   z-index: 2;
   max-width: calc(var(--max-w) + 2 * var(--px));
@@ -1192,6 +1192,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   border: 1px solid var(--gray-200);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07), 0 1px 4px rgba(0,0,0,0.04);
 }
 @media (max-width: 899px) {
   .sv2-reverse .sv2-image { order: -1; }
@@ -1200,7 +1201,6 @@ footer {
   .service-block-v2 { grid-template-columns: 38% 1fr 1fr; min-height: 480px; }
   .service-block-v2.sv2-reverse { grid-template-columns: 1fr 1fr 38%; }
   .sv2-reverse .sv2-main { padding-left: var(--px); }
-  .sv2-main { justify-content: center; }
 }
 
 .sv2-image {
@@ -1215,10 +1215,52 @@ footer {
 }
 
 .sv2-main {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+@media (min-width: 900px) {
+  .sv2-main { flex-direction: row; align-items: stretch; }
+}
+
+.sv2-text {
   padding: 3rem var(--px);
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  justify-content: center;
+  flex: 1 1 55%;
+  min-width: 0;
+}
+
+.sv2-product-img {
+  position: relative;
+  overflow: hidden;
+  height: 220px;
+}
+.sv2-product-img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 50%, #fff 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+.sv2-product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+@media (min-width: 900px) {
+  .sv2-product-img {
+    flex: 0 0 45%;
+    height: auto;
+  }
+  .sv2-product-img::after {
+    background: linear-gradient(to right, #fff 0%, transparent 35%);
+  }
 }
 
 .sv2-header {
@@ -1375,6 +1417,7 @@ footer {
   .sv2-details-right {
     margin: 0 !important;
     padding: 2.5rem 2rem;
+    align-self: stretch;
   }
 }
 
