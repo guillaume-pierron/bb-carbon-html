@@ -22,7 +22,7 @@
     .nav-toggle .bar { background: #fff; }
     /* Nav blanche après scroll */
     .nav.scrolled { background: #fff; border-bottom-color: var(--gray-200); }
-    .nav.scrolled .nav-logo img { filter: none; }
+    .nav.scrolled .nav-logo img { filter: brightness(0); }
     .nav.scrolled .nav-link { color: var(--gray-600); }
     .nav.scrolled .nav-link:hover { color: var(--zinc-900); }
     .nav.scrolled .nav-link::after { background: linear-gradient(to right, var(--gold), transparent); }
@@ -75,183 +75,192 @@
     </div>
   </section>
 
+  <!-- BANDE STATS -->
+  <div class="services-stats-band">
+    <div class="ssb-stat">
+      <span class="ssb-num">04</span>
+      <span class="ssb-label">Services disponibles</span>
+    </div>
+    <div class="ssb-sep"></div>
+    <div class="ssb-stat">
+      <span class="ssb-num">100%</span>
+      <span class="ssb-label">Tissu carbone véritable</span>
+    </div>
+    <div class="ssb-sep"></div>
+    <div class="ssb-stat">
+      <span class="ssb-num">48h</span>
+      <span class="ssb-label">Délai de réponse</span>
+    </div>
+    <div class="ssb-sep"></div>
+    <div class="ssb-stat">
+      <span class="ssb-num">5–10j</span>
+      <span class="ssb-label">Délai de fabrication</span>
+    </div>
+  </div>
+
   <!-- LISTE DES SERVICES -->
   <section class="services-list">
-    <div class="container">
 
-      <!-- 01 Création -->
-      <div class="service-block animate-in" id="creation">
-        <div class="service-block-content">
-          <div class="service-block-meta">
-            <span class="service-block-num">01</span>
-            <div class="service-block-meta-line"></div>
-          </div>
-          <h2>Création Sur-Mesure</h2>
-          <p class="subtitle">De l'idée à la pièce finale</p>
-          <p>Fabrication de pièces en fibre de carbone entièrement personnalisées. Nous concevons et réalisons chaque pièce selon vos spécifications, que ce soit un simple habillage ou une pièce structurelle complexe.</p>
-          <ul class="service-features">
-            <li class="service-feature"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Conception à partir de vos mesures</li>
-            <li class="service-feature"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Tissu carbone 2×2, 3K, 12K au choix</li>
-            <li class="service-feature"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Finition brillante, mate ou satin</li>
-            <li class="service-feature"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Prototypage possible avant fabrication finale</li>
-            <li class="service-feature"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Pièces d'intérieur et d'extérieur</li>
-            <li class="service-feature"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Moulage sur pièce existante</li>
+    <!-- 01 Création — design révisé -->
+    <div class="service-block-v2 service-design-new animate-in" id="creation">
+      <div class="sv2-main">
+        <div class="sv2-header">
+          <span class="sv2-num">01</span>
+          <span class="sv2-dash">—</span>
+          <span class="sv2-icon">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </span>
+        </div>
+        <h2>Création Sur-Mesure</h2>
+        <p class="sv2-subtitle">De l'idée à la pièce finale</p>
+        <p class="sv2-desc">Fabrication de pièces en fibre de carbone entièrement personnalisées. Nous concevons et réalisons chaque pièce selon vos spécifications, que ce soit un simple habillage ou une pièce structurelle complexe.</p>
+        <a href="contact.html" class="sv2-btn">Demander un Devis <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="sv2-details sv2-details-right">
+        <div>
+          <span class="sv2-section-label">Ce que comprend le service</span>
+          <ul class="sv2-features">
+            <li class="sv2-feature"><span class="sv2-dot"></span>Conception à partir de vos mesures</li>
+            <li class="sv2-feature"><span class="sv2-dot"></span>Tissu carbone 2×2, 3K, 12K au choix</li>
+            <li class="sv2-feature"><span class="sv2-dot"></span>Finition brillante, mate ou satin</li>
+            <li class="sv2-feature"><span class="sv2-dot"></span>Prototypage possible avant fabrication finale</li>
+            <li class="sv2-feature"><span class="sv2-dot"></span>Pièces d'intérieur et d'extérieur</li>
+            <li class="sv2-feature"><span class="sv2-dot"></span>Moulage sur pièce existante</li>
           </ul>
-          <div class="service-examples-wrap">
-            <span class="service-examples-label">Exemples de pièces</span>
-            <div class="service-examples">
-              <span class="service-tag">Tablette de bord</span>
-              <span class="service-tag">Coques rétroviseurs</span>
-              <span class="service-tag">Spoilers</span>
-              <span class="service-tag">Diffuseurs</span>
-              <span class="service-tag">Montants A/B/C</span>
-            </div>
+        </div>
+        <div>
+          <span class="sv2-section-label">Exemples de pièces</span>
+          <div class="sv2-examples">
+            <span class="sv2-example-tag">Tablette de bord</span>
+            <span class="sv2-example-tag">Coques de rétroviseurs</span>
+            <span class="sv2-example-tag">Spoilers</span>
+            <span class="sv2-example-tag">Diffuseurs</span>
+            <span class="sv2-example-tag">Montants A/B/C</span>
           </div>
-          <a href="contact.html" class="btn-outline-white">Demander un Devis <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-        <div class="service-block-image">
-          <img src="images/board.png" alt="Tableau de bord carbone sur-mesure" loading="lazy" />
-        </div>
-      </div>
-
-      <!-- 02 Recouvrement -->
-      <div class="service-block animate-in" id="recouvrement">
-        <div class="service-block-content">
-          <div class="service-block-meta">
-            <span class="service-block-num">02</span>
-            <div class="service-block-meta-line"></div>
-          </div>
-          <h2>Recouvrement Carbone</h2>
-          <p class="subtitle">Transformez vos pièces existantes</p>
-          <p>Recouvrement de vos pièces d'origine avec du tissu carbone véritable. Technique professionnelle pour un rendu impeccable, identique à une pièce carbone massif.</p>
-          <ul class="service-features">
-            <li class="service-feature"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Recouvrement fidèle aux formes d'origine</li>
-            <li class="service-feature"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Tissu carbone véritable (pas de film)</li>
-            <li class="service-feature"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Résine epoxy haute performance</li>
-            <li class="service-feature"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Finition vernissée UV</li>
-            <li class="service-feature"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Adapté à toutes surfaces rigides</li>
-            <li class="service-feature"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Délai rapide : 5–10 jours ouvrés</li>
-          </ul>
-          <div class="service-examples-wrap">
-            <span class="service-examples-label">Exemples de pièces</span>
-            <div class="service-examples">
-              <span class="service-tag">Volants de direction</span>
-              <span class="service-tag">Leviers de vitesse</span>
-              <span class="service-tag">Planche de bord</span>
-              <span class="service-tag">Accoudoirs</span>
-              <span class="service-tag">Garnitures de portière</span>
-            </div>
-          </div>
-          <a href="contact.html" class="btn-outline-white">Demander un Devis <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-        <div class="service-block-image">
-          <img src="images/volant.png" alt="Recouvrement volant carbone" loading="lazy" />
-        </div>
-      </div>
-
-      <!-- 03 Réparation -->
-      <div class="service-block animate-in" id="reparation">
-        <div class="service-block-content">
-          <div class="service-block-meta">
-            <span class="service-block-num">03</span>
-            <div class="service-block-meta-line"></div>
-          </div>
-          <h2>Réparation & Restauration</h2>
-          <p class="subtitle">Redonnez vie à vos pièces carbone</p>
-          <p>Réparation professionnelle de pièces en carbone endommagées. Fissures, éclats, délaminage — nous remettons vos pièces à neuf avec des techniques spécialisées.</p>
-          <ul class="service-features">
-            <li class="service-feature"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Diagnostic précis des dégâts</li>
-            <li class="service-feature"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Réparation structurelle et esthétique</li>
-            <li class="service-feature"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Remplacement de toile carbone localisé</li>
-            <li class="service-feature"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Re-vernissage et re-polish</li>
-            <li class="service-feature"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Réparation invisible sur pièces mates et brillantes</li>
-            <li class="service-feature"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Garantie sur les travaux réalisés</li>
-          </ul>
-          <div class="service-examples-wrap">
-            <span class="service-examples-label">Exemples de pièces</span>
-            <div class="service-examples">
-              <span class="service-tag">Carrosserie carbone</span>
-              <span class="service-tag">Aileron endommagé</span>
-              <span class="service-tag">Pièces fissurées</span>
-              <span class="service-tag">Éclats de vernis</span>
-              <span class="service-tag">Bulles sous vernis</span>
-            </div>
-          </div>
-          <a href="contact.html" class="btn-outline-white">Demander un Devis <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-        <div class="service-block-image">
-          <img src="images/board.png" alt="Restauration tableau de bord carbone" loading="lazy" />
-        </div>
-      </div>
-
-      <!-- 04 Custom -->
-      <div class="service-block animate-in" id="custom">
-        <div class="service-block-content">
-          <div class="service-block-meta">
-            <span class="service-block-num">04</span>
-            <div class="service-block-meta-line"></div>
-          </div>
-          <h2>Objets Custom</h2>
-          <p class="subtitle">Le carbone au-delà de l'automobile</p>
-          <p>B&amp;B Carbon ne se limite pas à l'automobile. Nous réalisons des recouvrements et créations carbone sur tous types d'objets — manettes, accessoires hi-tech, objets décoratifs et plus encore.</p>
-          <ul class="service-features">
-            <li class="service-feature"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Manettes de gaming (Xbox, PS5...)</li>
-            <li class="service-feature"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Casques et équipements moto</li>
-            <li class="service-feature"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Objets décoratifs et design</li>
-            <li class="service-feature"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Accessoires uniques sur commande</li>
-            <li class="service-feature"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Petites séries possibles</li>
-            <li class="service-feature"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Idéal pour cadeaux personnalisés</li>
-          </ul>
-          <div class="service-examples-wrap">
-            <span class="service-examples-label">Exemples de pièces</span>
-            <div class="service-examples">
-              <span class="service-tag">Manette Xbox</span>
-              <span class="service-tag">Casque moto</span>
-              <span class="service-tag">Boîtier de montre</span>
-              <span class="service-tag">Télécommandes</span>
-              <span class="service-tag">Éléments design intérieur</span>
-            </div>
-          </div>
-          <a href="contact.html" class="btn-outline-white">Demander un Devis <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-        <div class="service-block-image">
-          <img src="images/xbox.png" alt="Manette Xbox carbone custom" loading="lazy" />
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- PROCESSUS -->
-  <section class="process-section">
-    <div class="container">
-      <div class="section-center animate-in">
-        <span class="label">Comment ça marche</span>
-        <h2 class="section-title">Le processus en <span class="text-gold">4 étapes</span></h2>
-      </div>
-      <div class="process-grid">
-        <div class="process-step animate-in">
-          <div class="process-num">01</div>
-          <h3>Prise de contact</h3>
-          <p>Envoyez-nous votre idée, des photos et le maximum de détails via le formulaire de devis.</p>
-        </div>
-        <div class="process-step animate-in" data-delay="100">
-          <div class="process-num">02</div>
-          <h3>Devis personnalisé</h3>
-          <p>Nous analysons votre projet et vous envoyons un devis détaillé sous 48h.</p>
-        </div>
-        <div class="process-step animate-in" data-delay="200">
-          <div class="process-num">03</div>
-          <h3>Fabrication</h3>
-          <p>Après validation, nous fabriquons votre pièce avec soin dans notre atelier.</p>
-        </div>
-        <div class="process-step animate-in" data-delay="300">
-          <div class="process-num">04</div>
-          <h3>Livraison</h3>
-          <p>Votre pièce est soigneusement emballée et expédiée ou disponible en remise en main propre.</p>
         </div>
       </div>
     </div>
+
+    <!-- 02 Recouvrement — design révisé -->
+    <div class="service-block-v2 service-design-new animate-in" id="recouvrement">
+      <div class="sv2-main">
+        <div class="sv2-header">
+          <span class="sv2-num">02</span>
+          <span class="sv2-dash">—</span>
+          <span class="sv2-icon">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </span>
+        </div>
+        <h2>Recouvrement Carbone</h2>
+        <p class="sv2-subtitle">Transformez vos pièces existantes</p>
+        <p class="sv2-desc">Recouvrement de vos pièces d'origine avec du tissu carbone véritable. Technique professionnelle pour un rendu impeccable, identique à une pièce carbone massif.</p>
+        <a href="contact.html" class="sv2-btn">Demander un Devis <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="sv2-details sv2-details-right">
+        <div>
+          <span class="sv2-section-label">Ce que comprend le service</span>
+          <ul class="sv2-features">
+            <li class="sv2-feature"><span class="sv2-dot"></span>Recouvrement fidèle aux formes d'origine</li>
+            <li class="sv2-feature"><span class="sv2-dot"></span>Tissu carbone véritable (pas de film)</li>
+            <li class="sv2-feature"><span class="sv2-dot"></span>Résine epoxy haute performance</li>
+            <li class="sv2-feature"><span class="sv2-dot"></span>Finition vernissée UV</li>
+            <li class="sv2-feature"><span class="sv2-dot"></span>Adapté à toutes surfaces rigides</li>
+            <li class="sv2-feature"><span class="sv2-dot"></span>Délai rapide : 5–10 jours ouvrés</li>
+          </ul>
+        </div>
+        <div>
+          <span class="sv2-section-label">Exemples de pièces</span>
+          <div class="sv2-examples">
+            <span class="sv2-example-tag">Volants de direction</span>
+            <span class="sv2-example-tag">Leviers de vitesse</span>
+            <span class="sv2-example-tag">Planche de bord</span>
+            <span class="sv2-example-tag">Accoudoirs</span>
+            <span class="sv2-example-tag">Garnitures de portière</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 03 Réparation — design révisé -->
+    <div class="service-block-v2 service-design-new animate-in" id="reparation">
+      <div class="sv2-main">
+        <div class="sv2-header">
+          <span class="sv2-num">03</span>
+          <span class="sv2-dash">—</span>
+          <span class="sv2-icon">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </span>
+        </div>
+        <h2>Réparation & Restauration</h2>
+        <p class="sv2-subtitle">Redonnez vie à vos pièces carbone</p>
+        <p class="sv2-desc">Réparation professionnelle de pièces en carbone endommagées. Fissures, éclats, délaminage — nous remettons vos pièces à neuf avec des techniques spécialisées.</p>
+        <a href="contact.html" class="sv2-btn">Demander un Devis <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="sv2-details sv2-details-right">
+        <div>
+          <span class="sv2-section-label">Ce que comprend le service</span>
+          <ul class="sv2-features">
+            <li class="sv2-feature"><span class="sv2-dot"></span>Diagnostic précis des dégâts</li>
+            <li class="sv2-feature"><span class="sv2-dot"></span>Réparation structurelle et esthétique</li>
+            <li class="sv2-feature"><span class="sv2-dot"></span>Remplacement de toile carbone localisé</li>
+            <li class="sv2-feature"><span class="sv2-dot"></span>Re-vernissage et re-polish</li>
+            <li class="sv2-feature"><span class="sv2-dot"></span>Réparation invisible sur pièces mates et brillantes</li>
+            <li class="sv2-feature"><span class="sv2-dot"></span>Garantie sur les travaux réalisés</li>
+          </ul>
+        </div>
+        <div>
+          <span class="sv2-section-label">Exemples de pièces</span>
+          <div class="sv2-examples">
+            <span class="sv2-example-tag">Carrosserie carbone</span>
+            <span class="sv2-example-tag">Aileron endommagé</span>
+            <span class="sv2-example-tag">Pièces fissurées</span>
+            <span class="sv2-example-tag">Éclats de vernis</span>
+            <span class="sv2-example-tag">Bulles sous vernis</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 04 Custom — design révisé -->
+    <div class="service-block-v2 service-design-new animate-in" id="custom">
+      <div class="sv2-main">
+        <div class="sv2-header">
+          <span class="sv2-num">04</span>
+          <span class="sv2-dash">—</span>
+          <span class="sv2-icon">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </span>
+        </div>
+        <h2>Objets Custom</h2>
+        <p class="sv2-subtitle">Le carbone au-delà de l'automobile</p>
+        <p class="sv2-desc">B&amp;B Carbon ne se limite pas à l'automobile. Nous réalisons des recouvrements et créations carbone sur tous types d'objets — manettes, accessoires hi-tech, objets décoratifs et plus encore.</p>
+        <a href="contact.html" class="sv2-btn">Demander un Devis <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="sv2-details sv2-details-right">
+        <div>
+          <span class="sv2-section-label">Ce que comprend le service</span>
+          <ul class="sv2-features">
+            <li class="sv2-feature"><span class="sv2-dot"></span>Manettes de gaming (Xbox, PS5...)</li>
+            <li class="sv2-feature"><span class="sv2-dot"></span>Casques et équipements moto</li>
+            <li class="sv2-feature"><span class="sv2-dot"></span>Objets décoratifs et design</li>
+            <li class="sv2-feature"><span class="sv2-dot"></span>Accessoires uniques sur commande</li>
+            <li class="sv2-feature"><span class="sv2-dot"></span>Petites séries possibles</li>
+            <li class="sv2-feature"><span class="sv2-dot"></span>Idéal pour cadeaux personnalisés</li>
+          </ul>
+        </div>
+        <div>
+          <span class="sv2-section-label">Exemples de pièces</span>
+          <div class="sv2-examples">
+            <span class="sv2-example-tag">Manette Xbox</span>
+            <span class="sv2-example-tag">Casque moto</span>
+            <span class="sv2-example-tag">Boîtier de montre</span>
+            <span class="sv2-example-tag">Télécommandes</span>
+            <span class="sv2-example-tag">Éléments de design intérieur</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <!-- CTA -->
