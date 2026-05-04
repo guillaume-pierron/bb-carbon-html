@@ -505,6 +505,12 @@ ul { list-style: none; }
   object-fit: contain;
   clip-path: inset(0 0 58% 0);
 }
+@media (max-width: 1023px) {
+  .services-bg-logo img {
+    clip-path: none;
+    opacity: 0.05;
+  }
+}
 @media (min-width: 1024px) {
   .services-bg-logo img {
     max-width: 1050px;
