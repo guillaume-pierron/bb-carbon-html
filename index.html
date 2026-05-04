@@ -25,9 +25,9 @@
     .nav.scrolled .nav-logo img { filter: brightness(0); }
     .nav.scrolled .nav-link { color: var(--gray-600); }
     .nav.scrolled .nav-link:hover { color: var(--zinc-900); }
-    .nav.scrolled .nav-link::after { background: linear-gradient(to right, var(--gold), transparent); }
-    .nav.scrolled .nav-link.active { color: var(--gold); }
-    .nav.scrolled .nav-link.active::after { background: linear-gradient(to right, var(--gold), transparent); }
+    .nav.scrolled .nav-link::after { background: linear-gradient(to right, var(--accent), transparent); }
+    .nav.scrolled .nav-link.active { color: var(--accent); }
+    .nav.scrolled .nav-link.active::after { background: linear-gradient(to right, var(--accent), transparent); }
     .nav.scrolled .nav-cta.btn-primary { background: #000; color: #fff; }
     .nav.scrolled .nav-cta.btn-primary:hover { background: #222; box-shadow: 0 4px 16px rgba(0,0,0,0.35); }
     .nav.scrolled .nav-toggle .bar { background: var(--zinc-900); }
@@ -119,13 +119,6 @@
       </div>
     </div>
     <div class="services-hero-stat">
-      <div class="services-hero-stat-icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
-      <div>
-        <strong>Qualité Premium</strong>
-        <span>Matériaux haut de gamme, finitions irréprochables.</span>
-      </div>
-    </div>
-    <div class="services-hero-stat">
       <div class="services-hero-stat-icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
       <div>
         <strong>Performance</strong>
@@ -150,7 +143,7 @@
       <div class="section-header animate-in">
         <div>
           <span class="label">Notre Expertise</span>
-          <h2 class="section-title" id="services-title">Ce que nous<br><span class="text-gold">fabriquons</span></h2>
+          <h2 class="section-title" id="services-title">Ce que nous<br><span class="text-accent">fabriquons</span></h2>
         </div>
         <a href="services.html" class="section-link">
           Tous les services
@@ -211,13 +204,19 @@
   </section>
 
   <!-- GALERIE -->
-  <section class="gallery-section" aria-labelledby="gallery-title">
+  <section class="gallery-dark" aria-labelledby="gallery-title">
     <div class="container">
-      <div class="section-center animate-in">
-        <span class="label">Nos Réalisations</span>
-        <h2 class="section-title" id="gallery-title">Quelques <span class="text-gold">projets</span></h2>
+      <div class="section-header animate-in">
+        <div>
+          <span class="label">Nos Réalisations</span>
+          <h2 class="section-title" id="gallery-title">Quelques <span class="text-accent">projets</span></h2>
+        </div>
+        <a href="realisations.html" class="section-link gallery-dark-link">
+          Toutes les réalisations
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
       </div>
-      <div class="gallery-grid">
+      <div class="gallery-mosaic">
         <div class="gallery-item animate-in">
           <img src="images/volant.png" alt="Habillage de volant" loading="lazy" />
           <div class="gallery-overlay"></div>
@@ -227,8 +226,8 @@
           </div>
           <div class="gallery-hover"><span class="gallery-see">Voir</span></div>
         </div>
-        <div class="gallery-item animate-in" data-delay="120">
-          <img src="images/bottle_creation.png" alt="Tableau de bord" loading="lazy" />
+        <div class="gallery-item animate-in" data-delay="100">
+          <img src="images/bottle_creation.png" alt="Porte bouteille" loading="lazy" />
           <div class="gallery-overlay"></div>
           <div class="gallery-info">
             <span class="gallery-cat">Objet</span>
@@ -236,8 +235,8 @@
           </div>
           <div class="gallery-hover"><span class="gallery-see">Voir</span></div>
         </div>
-        <div class="gallery-item animate-in" data-delay="240">
-          <img src="images/coque.png" alt="Manette Xbox" loading="lazy" />
+        <div class="gallery-item animate-in" data-delay="180">
+          <img src="images/coque.png" alt="Coque de rétroviseur" loading="lazy" />
           <div class="gallery-overlay"></div>
           <div class="gallery-info">
             <span class="gallery-cat">Custom</span>
@@ -245,7 +244,7 @@
           </div>
           <div class="gallery-hover"><span class="gallery-see">Voir</span></div>
         </div>
-        <div class="gallery-item animate-in" data-delay="360">
+        <div class="gallery-item animate-in" data-delay="260">
           <img src="images/boite.png" alt="Boîte sur-mesure" loading="lazy" />
           <div class="gallery-overlay"></div>
           <div class="gallery-info">
@@ -254,12 +253,6 @@
           </div>
           <div class="gallery-hover"><span class="gallery-see">Voir</span></div>
         </div>
-      </div>
-      <div class="section-center animate-in">
-        <a href="realisations.html" class="btn btn-secondary">
-          Voir Toutes les Réalisations
-          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
       </div>
     </div>
   </section>
@@ -270,7 +263,7 @@
       <div class="values-grid">
         <div class="values-text animate-in from-left">
           <span class="label">Pourquoi B&B Carbon</span>
-          <h2 class="section-title" id="values-title">L'excellence<br><span class="text-gold">artisanale</span></h2>
+          <h2 class="section-title" id="values-title">L'excellence<br><span class="text-accent">artisanale</span></h2>
           <p>Chez B&B Carbon, chaque projet est abordé comme une œuvre unique. Nous combinons techniques de fabrication professionnelles et attention au détail pour livrer des pièces qui dépassent les attentes.</p>
           <a href="a-propos.html" class="btn btn-secondary">
             Notre Histoire
@@ -314,7 +307,7 @@
   <section class="cta-section" aria-labelledby="cta-title">
     <div class="animate-in">
       <span class="label">Commencez votre projet</span>
-      <h2 id="cta-title">Votre projet,<br><span class="text-gold">notre expertise</span></h2>
+      <h2 id="cta-title">Votre projet,<br><span class="text-accent">notre expertise</span></h2>
       <a href="contact.html" class="btn btn-primary">
         Démarrer Mon Projet
         <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -324,15 +317,6 @@
 
   <!-- FOOTER -->
   <footer>
-    <div class="footer-cta">
-      <div class="footer-cta-inner">
-        <div>
-          <h3>Votre projet en carbone commence ici</h3>
-          <p>Devis gratuit et personnalisé sous 48h</p>
-        </div>
-        <a href="contact.html" class="btn-white">Demander un Devis</a>
-      </div>
-    </div>
     <div class="footer-main">
       <div class="footer-brand">
         <img src="images/logo.svg" alt="B&B Carbon" />
