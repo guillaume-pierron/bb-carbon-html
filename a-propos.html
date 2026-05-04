@@ -8,12 +8,41 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .nav { background: transparent; border-bottom-color: transparent; }
+    .nav-logo img { filter: brightness(0) invert(1); }
+    .nav-link { color: rgba(255,255,255,0.78); }
+    .nav-link:hover { color: #fff; }
+    .nav-link::after { background: rgba(255,255,255,0.5); }
+    .nav-link.active { color: #fff; }
+    .nav-link.active::after { background: rgba(255,255,255,0.5); }
+    .nav-cta.btn-primary { background: #fff; color: #000; }
+    .nav-cta.btn-primary:hover { background: rgba(255,255,255,0.9); box-shadow: none; }
+    .nav-toggle .bar { background: #fff; }
+
+    .cta-carbon {
+      background-color: #0d0d0d;
+      background-image:
+        linear-gradient(45deg, rgba(255,255,255,0.06) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(255,255,255,0.06) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.06) 75%),
+        linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.06) 75%);
+      background-size: 6px 6px;
+      background-position: 0 0, 0 3px, 3px -3px, -3px 0px;
+      border-top: none;
+    }
+    .cta-carbon h2 { color: #fff; }
+    .cta-carbon p { color: rgba(255,255,255,0.6); }
+    .cta-carbon .label { color: rgba(255,255,255,0.4); }
+    .cta-carbon .btn-secondary { color: #fff; border-color: #fff; }
+    .cta-carbon .btn-secondary:hover { background: #fff; color: #000; }
+  </style>
 </head>
 <body>
 
   <nav class="nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo"><img src="images/logo_noir.svg" alt="B&B Carbon" /></a>
+      <a href="index.html" class="nav-logo"><img src="images/logo.svg" alt="B&B Carbon" /></a>
       <div class="nav-links">
         <a href="index.html" class="nav-link">Accueil</a>
         <a href="services.html" class="nav-link">Services</a>
@@ -37,11 +66,17 @@
   </div>
 
   <!-- EN-TÊTE -->
-  <section class="page-header">
-    <div class="container animate-in">
-      <span class="label">Notre Histoire</span>
-      <h1 class="section-title">L'atelier <span class="text-accent">B&B Carbon</span></h1>
-      <p>Né d'une passion pour l'automobile et la fabrication, B&B Carbon s'est imposé comme une référence dans la création de pièces carbone artisanales.</p>
+  <section class="services-hero">
+    <div class="services-hero-bg">
+      <img src="images/header_a_propos.png" alt="" aria-hidden="true" />
+    </div>
+    <div class="services-hero-inner">
+      <div class="services-hero-text animate-in">
+        <span class="services-hero-label">Notre Histoire</span>
+        <h1 class="services-hero-title">L'atelier <span>B&B Carbon</span></h1>
+        <div class="services-hero-divider"></div>
+        <p>Né d'une passion pour l'automobile et la fabrication, B&B Carbon s'est imposé comme une référence dans la création de pièces carbone artisanales.</p>
+      </div>
     </div>
   </section>
 
@@ -78,14 +113,13 @@
 
         <div class="story-visual animate-in from-right">
           <div class="story-visual-box">
-            <div class="story-visual-pattern"></div>
-            <div class="story-visual-icon">
-              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+            <img src="images/atelier.png" alt="L'atelier B&B Carbon" />
+            <div class="story-visual-overlay">
+              <blockquote class="story-quote">
+                «&nbsp;Chaque pièce carbone est une conversation entre le matériau et l'artisan. Notre rôle est de l'écouter pour créer quelque chose d'exceptionnel.&nbsp;»
+              </blockquote>
+              <div class="story-quote-author">— B&B Carbon</div>
             </div>
-            <blockquote class="story-quote">
-              «&nbsp;Chaque pièce carbone est une conversation entre le matériau et l'artisan. Notre rôle est de l'écouter pour créer quelque chose d'exceptionnel.&nbsp;»
-            </blockquote>
-            <div class="story-quote-author">— B&B Carbon</div>
           </div>
           <div class="story-badge">
             <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
@@ -104,34 +138,34 @@
         <span class="label">Nos Valeurs</span>
         <h2 class="section-title">Ce qui nous <span class="text-accent">définit</span></h2>
       </div>
-      <div class="services-grid" style="margin-top:3rem;">
-        <div class="service-card animate-in" style="padding:2rem;">
-          <div class="value-icon" style="margin-bottom:1.5rem;">
-            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      <div class="values-cards">
+        <div class="value-card-item animate-in">
+          <div class="value-card-icon">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           </div>
           <h3>Qualité sans compromis</h3>
           <p>Nous utilisons exclusivement des matériaux premium : tissu carbone véritable, résines epoxy hautes performances, vernis UV durables. Aucun raccourci.</p>
         </div>
-        <div class="service-card animate-in" data-delay="100" style="padding:2rem;">
-          <div class="value-icon" style="margin-bottom:1.5rem;">
-            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/></svg>
+        <div class="value-card-item animate-in" data-delay="100">
+          <div class="value-card-icon">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/></svg>
           </div>
           <h3>Précision absolue</h3>
-          <p>Chaque pièce est mesurée, ajustée et vérifiée plusieurs fois avant livraison. La tolérance zéro défaut est notre standard.</p>
+          <p>Chaque pièce est mesurée, ajustée et vérifiée plusieurs fois avant livraison. La tolérance zéro défaut est notre standard, pas une exception.</p>
         </div>
-        <div class="service-card animate-in" data-delay="200" style="padding:2rem;">
-          <div class="value-icon" style="margin-bottom:1.5rem;">
-            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        <div class="value-card-item animate-in" data-delay="200">
+          <div class="value-card-icon">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
           </div>
           <h3>Passion automobile</h3>
-          <p>Nous sommes avant tout des passionnés. Cette passion se ressent dans chaque pièce fabriquée, chaque finition soignée.</p>
+          <p>Nous sommes avant tout des passionnés. Cette passion se ressent dans chaque pièce fabriquée, chaque finition soignée, chaque détail invisible.</p>
         </div>
-        <div class="service-card animate-in" data-delay="300" style="padding:2rem;">
-          <div class="value-icon" style="margin-bottom:1.5rem;">
-            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        <div class="value-card-item animate-in" data-delay="300">
+          <div class="value-card-icon">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
           </div>
           <h3>Relation client directe</h3>
-          <p>Chez B&B Carbon, vous travaillez directement avec l'artisan. Communication transparente, suivi personnalisé, résultat conforme à vos attentes.</p>
+          <p>Vous travaillez directement avec l'artisan. Communication transparente, suivi personnalisé, résultat conforme à vos attentes — sans intermédiaire.</p>
         </div>
       </div>
     </div>
@@ -152,7 +186,7 @@
             </div>
             <div class="expertise-item">
               <div class="expertise-dot"></div>
-              <div><span class="expertise-item-label">Finitions :</span> <span class="expertise-item-desc">Brillant, Mat, Satin, Soft-touch</span></div>
+              <div><span class="expertise-item-label">Finitions :</span> <span class="expertise-item-desc">Brillant, Mat, Soft-touch</span></div>
             </div>
             <div class="expertise-item">
               <div class="expertise-dot"></div>
@@ -187,9 +221,9 @@
   </section>
 
   <!-- CTA -->
-  <section class="cta-section" style="border-top:1px solid var(--gray-200); background:var(--gray-50);">
+  <section class="cta-section cta-carbon">
     <div class="animate-in">
-      <h2 style="color:var(--zinc-900);">Travaillons ensemble</h2>
+      <h2>Travaillons ensemble</h2>
       <p>Votre projet mérite une attention artisanale. Contactez-nous pour discuter de votre idée.</p>
       <div style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;">
         <a href="contact.html" class="btn btn-primary">Demander un Devis <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
