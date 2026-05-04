@@ -20,27 +20,6 @@
     .nav-cta.btn-primary:hover { background: rgba(255,255,255,0.9); box-shadow: none; }
     .nav-toggle .bar { background: #fff; }
 
-    .contact-box {
-      background: #0d0d0d;
-      border-color: rgba(255,255,255,0.08);
-      background-image:
-        linear-gradient(45deg, rgba(255,255,255,0.04) 25%, transparent 25%),
-        linear-gradient(-45deg, rgba(255,255,255,0.04) 25%, transparent 25%),
-        linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.04) 75%),
-        linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.04) 75%);
-      background-size: 6px 6px;
-      background-position: 0 0, 0 3px, 3px -3px, -3px 0px;
-    }
-    .contact-box h2 { color: rgba(255,255,255,0.5); }
-    .contact-box h2 svg { color: rgba(255,255,255,0.3); }
-    .contact-info-icon { border-color: rgba(255,255,255,0.12); }
-    .contact-info-icon svg { color: rgba(255,255,255,0.6); }
-    .contact-info-label { color: rgba(255,255,255,0.35); }
-    .contact-info-value { color: #fff; }
-    .contact-info-value a { color: #fff; }
-    .contact-info-value a:hover { color: rgba(255,255,255,0.7); }
-    .why-item { color: rgba(255,255,255,0.65); }
-    .why-check { color: var(--accent-light); }
   </style>
 </head>
 <body>
@@ -86,158 +65,187 @@
   </section>
 
   <!-- FORMULAIRE + SIDEBAR -->
-  <section class="contact-section">
-    <div class="container">
-      <div class="contact-grid">
+  <section class="devis-section">
 
-        <!-- Sidebar -->
-        <aside class="contact-sidebar animate-in from-left">
-          <div class="contact-box">
-            <h2>Nous contacter</h2>
-            <ul class="contact-info-list">
-              <li class="contact-info-item">
-                <div class="contact-info-icon">
-                  <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M4 4l8 9 8-9"/></svg>
-                </div>
-                <div>
-                  <div class="contact-info-label">Email</div>
-                  <div class="contact-info-value"><a href="mailto:contact@bbcarbon.fr">contact@bbcarbon.fr</a></div>
-                </div>
-              </li>
-              <li class="contact-info-item">
-                <div class="contact-info-icon">
-                  <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-                </div>
-                <div>
-                  <div class="contact-info-label">Téléphone</div>
-                  <div class="contact-info-value"><a href="tel:+33600000000">+33 6 00 00 00 00</a></div>
-                </div>
-              </li>
-              <li class="contact-info-item">
-                <div class="contact-info-icon">
-                  <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                </div>
-                <div>
-                  <div class="contact-info-label">Localisation</div>
-                  <div class="contact-info-value">France</div>
-                </div>
-              </li>
-              <li class="contact-info-item">
-                <div class="contact-info-icon">
-                  <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                </div>
-                <div>
-                  <div class="contact-info-label">Horaires</div>
-                  <div class="contact-info-value">Lun–Ven 9h–18h</div>
-                </div>
-              </li>
-            </ul>
+    <!-- Gauche : panel sombre -->
+    <div class="devis-left animate-in from-left">
+      <div class="devis-left-inner">
+
+        <div class="devis-left-top">
+          <span class="label">Devis Gratuit</span>
+          <h2>Parlons de<br>votre projet</h2>
+          <p>Décrivez votre idée. Plus vous nous donnez de détails, plus notre devis sera précis et adapté.</p>
+        </div>
+
+        <ul class="devis-contacts">
+          <li class="devis-contact-item">
+            <div class="devis-contact-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M4 4l8 9 8-9"/></svg></div>
+            <div>
+              <div class="devis-contact-label">Email</div>
+              <div class="devis-contact-value"><a href="mailto:contact@bbcarbon.fr">contact@bbcarbon.fr</a></div>
+            </div>
+          </li>
+          <li class="devis-contact-item">
+            <div class="devis-contact-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+            <div>
+              <div class="devis-contact-label">Téléphone</div>
+              <div class="devis-contact-value"><a href="tel:+33600000000">+33 6 00 00 00 00</a></div>
+            </div>
+          </li>
+          <li class="devis-contact-item">
+            <div class="devis-contact-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div>
+              <div class="devis-contact-label">Localisation</div>
+              <div class="devis-contact-value">France</div>
+            </div>
+          </li>
+          <li class="devis-contact-item">
+            <div class="devis-contact-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+            <div>
+              <div class="devis-contact-label">Horaires</div>
+              <div class="devis-contact-value">Lun–Ven 9h–18h</div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="devis-steps">
+          <p class="devis-steps-title">Et ensuite ?</p>
+          <div class="devis-step">
+            <span class="devis-step-num">1</span>
+            <div>
+              <strong>Nous préparons votre devis</strong>
+              <p>Délai, matériaux et tarif inclus. Réponse sous 48h.</p>
+            </div>
           </div>
-
-          <div class="contact-box">
-            <h2>
-              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-              Pourquoi nous choisir
-            </h2>
-            <ul class="why-list">
-              <li class="why-item"><span class="why-check">✓</span> Devis gratuit et sans engagement</li>
-              <li class="why-item"><span class="why-check">✓</span> Conseils personnalisés inclus</li>
-              <li class="why-item"><span class="why-check">✓</span> Matériaux haut de gamme garantis</li>
-              <li class="why-item"><span class="why-check">✓</span> Fabrication 100% artisanale</li>
-              <li class="why-item"><span class="why-check">✓</span> Suivi photos pendant la fabrication</li>
-              <li class="why-item"><span class="why-check">✓</span> Satisfait ou on reprend</li>
-            </ul>
+          <div class="devis-step">
+            <span class="devis-step-num">2</span>
+            <div>
+              <strong>On en discute ensemble</strong>
+              <p>Ajustements, questions, validation du projet.</p>
+            </div>
           </div>
-        </aside>
-
-        <!-- Formulaire -->
-        <div class="animate-in from-right">
-          <div class="contact-form-wrap">
-            <h2>Formulaire de devis</h2>
-            <p class="form-note">Tous les champs marqués * sont obligatoires.</p>
-
-            <form id="quote-form" novalidate>
-              <div class="form-row">
-                <div class="form-group">
-                  <label class="form-label" for="prenom">Prénom *</label>
-                  <input class="form-input" type="text" id="prenom" name="prenom" placeholder="Votre prénom" required />
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="nom">Nom *</label>
-                  <input class="form-input" type="text" id="nom" name="nom" placeholder="Votre nom" required />
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="form-group">
-                  <label class="form-label" for="email">Email *</label>
-                  <input class="form-input" type="email" id="email" name="email" placeholder="votre@email.fr" required />
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="tel">Téléphone</label>
-                  <input class="form-input" type="tel" id="tel" name="tel" placeholder="+33 6 00 00 00 00" />
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="service">Type de service *</label>
-                <select class="form-select" id="service" name="service" required>
-                  <option value="" disabled selected>Choisir un service</option>
-                  <option value="creation">Création Sur-Mesure</option>
-                  <option value="recouvrement">Recouvrement Carbone</option>
-                  <option value="reparation">Réparation & Restauration</option>
-                  <option value="custom">Objet Custom</option>
-                  <option value="autre">Autre / Je ne sais pas encore</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="vehicule">Véhicule / Objet concerné</label>
-                <input class="form-input" type="text" id="vehicule" name="vehicule" placeholder="Ex : BMW M3 E92, Manette Xbox..." />
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="message">Description du projet *</label>
-                <textarea class="form-textarea" id="message" name="message" rows="6" placeholder="Décrivez votre projet en détail : pièces concernées, finition souhaitée, délai, budget approximatif..." required></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
-                Envoyer ma Demande
-                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </button>
-            </form>
-
-            <div class="form-success" id="form-success">
-              <p>✓ <strong>Votre demande a bien été envoyée !</strong><br>Nous vous répondrons sous 48h.</p>
+          <div class="devis-step">
+            <span class="devis-step-num">3</span>
+            <div>
+              <strong>On commence la fabrication</strong>
+              <p>Suivi photos à chaque étape de la réalisation.</p>
             </div>
           </div>
         </div>
 
       </div>
     </div>
+
+    <!-- Droite : carte formulaire -->
+    <div class="devis-right">
+      <div class="devis-card animate-in from-right">
+
+        <div class="devis-card-intro">
+          <div class="devis-card-intro-icon">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <p>Décrivez votre projet et nous vous préparerons un devis gratuit sous <strong>48h</strong>.</p>
+        </div>
+
+        <form id="quote-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="prenom">Prénom *</label>
+              <input class="form-input" type="text" id="prenom" name="prenom" placeholder="Votre prénom" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="nom">Nom *</label>
+              <input class="form-input" type="text" id="nom" name="nom" placeholder="Votre nom" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="email">Email *</label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="votre@email.fr" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="tel">Téléphone</label>
+              <input class="form-input" type="tel" id="tel" name="tel" placeholder="+33 6 00 00 00 00" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="service">Type de service *</label>
+            <select class="form-select" id="service" name="service" required>
+              <option value="" disabled selected>Choisir un service</option>
+              <option value="creation">Création Sur-Mesure</option>
+              <option value="recouvrement">Recouvrement Carbone</option>
+              <option value="reparation">Réparation &amp; Restauration</option>
+              <option value="custom">Objet Custom</option>
+              <option value="autre">Autre / Je ne sais pas encore</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="vehicule">Véhicule / Objet concerné</label>
+            <input class="form-input" type="text" id="vehicule" name="vehicule" placeholder="Ex : BMW M3 E92, Manette Xbox..." />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Description du projet *</label>
+            <textarea class="form-textarea" id="message" name="message" rows="5" placeholder="Décrivez votre projet : pièces concernées, finition souhaitée, délai, budget approximatif..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+            Envoyer ma Demande
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </form>
+
+        <div class="form-success" id="form-success">
+          <p>✓ <strong>Votre demande a bien été envoyée !</strong><br>Nous vous répondrons sous 48h.</p>
+        </div>
+
+      </div>
+    </div>
+
   </section>
 
   <!-- FAQ -->
   <section class="faq-section">
-    <div class="container" style="max-width:800px;">
-      <h2>Questions fréquentes</h2>
+    <div class="container" style="max-width:760px;">
+      <div class="faq-header animate-in">
+        <span class="label">FAQ</span>
+        <h2>Questions fréquentes</h2>
+      </div>
       <div class="faq-list animate-in">
-        <div class="faq-item">
-          <h3>Quel est le délai de fabrication ?</h3>
-          <p>Les délais varient selon la complexité : de 5 à 10 jours pour un recouvrement simple, jusqu'à 4–6 semaines pour une création sur-mesure complexe.</p>
-        </div>
-        <div class="faq-item">
-          <h3>Livraison possible ?</h3>
-          <p>Oui, nous expédions dans toute la France (et Europe sur demande). L'emballage est soigné pour protéger chaque pièce.</p>
-        </div>
-        <div class="faq-item">
-          <h3>Je n'ai pas de pièce à envoyer, c'est possible ?</h3>
-          <p>Oui ! Pour les créations sur-mesure, nous pouvons travailler à partir de vos mesures, plans ou photos détaillées.</p>
-        </div>
-        <div class="faq-item">
-          <h3>Le carbone change-t-il avec le temps ?</h3>
-          <p>Nos pièces sont vernies avec des résines UV stables. Avec un entretien basique, elles conservent leur éclat pendant des années.</p>
-        </div>
+        <details class="faq-item">
+          <summary class="faq-summary">
+            <span>Quel est le délai de fabrication ?</span>
+            <svg class="faq-icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="faq-body"><div class="faq-body-inner">
+            <p>Les délais varient selon la complexité : de 5 à 10 jours pour un recouvrement simple, jusqu'à 4–6 semaines pour une création sur-mesure complexe.</p>
+          </div></div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-summary">
+            <span>Livraison possible ?</span>
+            <svg class="faq-icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="faq-body"><div class="faq-body-inner">
+            <p>Oui, nous expédions dans toute la France (et Europe sur demande). L'emballage est soigné pour protéger chaque pièce.</p>
+          </div></div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-summary">
+            <span>Je n'ai pas de pièce à envoyer, c'est possible ?</span>
+            <svg class="faq-icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="faq-body"><div class="faq-body-inner">
+            <p>Oui ! Pour les créations sur-mesure, nous pouvons travailler à partir de vos mesures, plans ou photos détaillées.</p>
+          </div></div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-summary">
+            <span>Le carbone change-t-il avec le temps ?</span>
+            <svg class="faq-icon" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="faq-body"><div class="faq-body-inner">
+            <p>Nos pièces sont vernies avec des résines UV stables. Avec un entretien basique, elles conservent leur éclat pendant des années.</p>
+          </div></div>
+        </details>
       </div>
     </div>
   </section>
@@ -287,5 +295,27 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script>
+    document.querySelectorAll('.faq-item').forEach(details => {
+      const summary = details.querySelector('.faq-summary');
+      const body = details.querySelector('.faq-body');
+
+      body.style.height = '0';
+
+      summary.addEventListener('click', e => {
+        e.preventDefault();
+        if (details.open) {
+          body.style.height = body.scrollHeight + 'px';
+          requestAnimationFrame(() => requestAnimationFrame(() => { body.style.height = '0'; }));
+          body.addEventListener('transitionend', () => details.removeAttribute('open'), { once: true });
+        } else {
+          details.setAttribute('open', '');
+          body.style.height = '0';
+          requestAnimationFrame(() => requestAnimationFrame(() => { body.style.height = body.scrollHeight + 'px'; }));
+          body.addEventListener('transitionend', () => { body.style.height = 'auto'; }, { once: true });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
