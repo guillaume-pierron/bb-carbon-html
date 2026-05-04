@@ -21,24 +21,26 @@
         <a href="a-propos.html" class="nav-link">À Propos</a>
         <a href="contact.html" class="nav-link nav-cta btn btn-primary btn-sm">Devis Gratuit</a>
       </div>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false">
-        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
       </button>
     </div>
   </nav>
   <div class="mobile-menu" id="mobile-menu">
-    <a href="index.html" class="nav-link">Accueil</a>
-    <a href="services.html" class="nav-link">Services</a>
-    <a href="realisations.html" class="nav-link">Réalisations</a>
-    <a href="a-propos.html" class="nav-link">À Propos</a>
-    <a href="contact.html" class="nav-link">Devis</a>
+    <nav class="mobile-nav">
+      <a href="index.html" class="mobile-nav-link"><span class="mobile-nav-num">01</span>Accueil</a>
+      <a href="services.html" class="mobile-nav-link"><span class="mobile-nav-num">02</span>Services</a>
+      <a href="realisations.html" class="mobile-nav-link"><span class="mobile-nav-num">03</span>Réalisations</a>
+      <a href="a-propos.html" class="mobile-nav-link"><span class="mobile-nav-num">04</span>À Propos</a>
+    </nav>
+    <a href="contact.html" class="btn btn-primary mobile-menu-cta">Devis Gratuit <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
   </div>
 
   <!-- EN-TÊTE -->
   <section class="page-header">
     <div class="container animate-in">
       <span class="label">Notre Histoire</span>
-      <h1 class="section-title">L'atelier <span class="text-gold">B&B Carbon</span></h1>
+      <h1 class="section-title">L'atelier <span class="text-accent">B&B Carbon</span></h1>
       <p>Né d'une passion pour l'automobile et la fabrication, B&B Carbon s'est imposé comme une référence dans la création de pièces carbone artisanales.</p>
     </div>
   </section>
@@ -100,7 +102,7 @@
     <div class="container">
       <div class="section-center animate-in">
         <span class="label">Nos Valeurs</span>
-        <h2 class="section-title">Ce qui nous <span class="text-gold">définit</span></h2>
+        <h2 class="section-title">Ce qui nous <span class="text-accent">définit</span></h2>
       </div>
       <div class="services-grid" style="margin-top:3rem;">
         <div class="service-card animate-in" style="padding:2rem;">
@@ -141,7 +143,7 @@
       <div class="expertise-grid">
         <div class="animate-in from-left">
           <span class="label">Maîtrise Technique</span>
-          <h2 class="section-title">Une expertise <span class="text-gold">complète</span></h2>
+          <h2 class="section-title">Une expertise <span class="text-accent">complète</span></h2>
           <p style="color:var(--gray-600);line-height:1.8;margin:1.5rem 0 2rem;">La fibre de carbone est un matériau exigeant qui ne pardonne pas les approximations. Notre maîtrise technique couvre l'ensemble du processus, de la préparation des moules à la finition finale.</p>
           <div class="expertise-list">
             <div class="expertise-item">
@@ -198,12 +200,6 @@
 
   <!-- FOOTER -->
   <footer>
-    <div class="footer-cta">
-      <div class="footer-cta-inner">
-        <div><h3>Votre projet en carbone commence ici</h3><p>Devis gratuit et personnalisé sous 48h</p></div>
-        <a href="contact.html" class="btn-white">Demander un Devis</a>
-      </div>
-    </div>
     <div class="footer-main">
       <div class="footer-brand">
         <img src="images/logo.svg" alt="B&B Carbon" />
