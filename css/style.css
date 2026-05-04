@@ -2020,6 +2020,7 @@ footer {
 @media (max-width: 900px) { .devis-section { grid-template-columns: 1fr; } }
 
 /* Colonne gauche — dark carbon */
+/* Colonne gauche — light panel */
 .devis-left {
   background-color: #0d0d0d;
   background-image:
@@ -2029,6 +2030,8 @@ footer {
     linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.06) 75%);
   background-size: 6px 6px;
   background-position: 0 0, 0 3px, 3px -3px, -3px 0px;
+  background-color: #fff;
+  border-right: 1px solid var(--gray-200);
   padding: 5rem clamp(2rem, 5vw, 5rem) 5rem clamp(2rem, 6vw, 6rem);
   display: flex;
   justify-content: flex-end;
@@ -2042,25 +2045,30 @@ footer {
 }
 
 .devis-left-top .label { color: rgba(255,255,255,0.35); }
+.devis-left-top .label { color: var(--gray-500); }
 .devis-left-top h2 {
   font-size: clamp(2rem, 3vw, 2.8rem);
   font-weight: 800;
   color: #fff;
+  color: var(--zinc-900);
   letter-spacing: -0.03em;
   line-height: 1.1;
   margin: 0.75rem 0 1rem;
 }
 .devis-left-top p { color: rgba(255,255,255,0.5); font-size: 0.9rem; line-height: 1.75; }
+.devis-left-top p { color: var(--gray-600); font-size: 0.9rem; line-height: 1.75; }
 
 .devis-contacts {
   display: flex; flex-direction: column; gap: 1.25rem;
   border-top: 1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid var(--gray-200);
   padding-top: 2rem;
 }
 .devis-contact-item { display: flex; align-items: flex-start; gap: 1rem; }
 .devis-contact-icon {
   width: 30px; height: 30px;
   border: 1px solid rgba(255,255,255,0.12);
+  border: 1px solid var(--gray-300);
   display: flex; align-items: center; justify-content: center;
   flex-shrink: 0;
   color: var(--accent-light);
@@ -2068,12 +2076,18 @@ footer {
 .devis-contact-label { font-size: 0.65rem; color: rgba(255,255,255,0.3); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.1rem; }
 .devis-contact-value { font-size: 0.87rem; color: #fff; }
 .devis-contact-value a { color: #fff; transition: color 0.2s; }
+.devis-contact-icon svg { color: var(--charcoal); }
+.devis-contact-label { font-size: 0.65rem; color: var(--gray-400); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.1rem; }
+.devis-contact-value { font-size: 0.87rem; color: var(--zinc-900); }
+.devis-contact-value a { color: var(--zinc-900); transition: color 0.2s; }
 .devis-contact-value a:hover { color: var(--accent-light); }
 
 .devis-steps { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 2rem; }
+.devis-steps { border-top: 1px solid var(--gray-200); padding-top: 2rem; }
 .devis-steps-title {
   font-size: 0.65rem; font-weight: 600; letter-spacing: 0.2em;
   text-transform: uppercase; color: rgba(255,255,255,0.35); margin-bottom: 1.5rem;
+  text-transform: uppercase; color: var(--gray-500); margin-bottom: 1.5rem;
 }
 .devis-step { display: flex; gap: 1rem; align-items: flex-start; margin-bottom: 1.5rem; }
 .devis-step:last-child { margin-bottom: 0; }
@@ -2085,6 +2099,8 @@ footer {
 }
 .devis-step strong { display: block; font-size: 0.87rem; font-weight: 600; color: #fff; margin-bottom: 0.2rem; }
 .devis-step p { font-size: 0.8rem; color: rgba(255,255,255,0.42); line-height: 1.5; margin: 0; }
+.devis-step strong { display: block; font-size: 0.87rem; font-weight: 600; color: var(--zinc-900); margin-bottom: 0.2rem; }
+.devis-step p { font-size: 0.8rem; color: var(--gray-500); line-height: 1.5; margin: 0; }
 
 /* Colonne droite — carte formulaire */
 .devis-right {
