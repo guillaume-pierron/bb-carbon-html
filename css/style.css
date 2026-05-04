@@ -2036,6 +2036,16 @@ footer {
   display: flex;
   justify-content: flex-end;
 }
+
+@media (max-width: 900px) {
+  .devis-left {
+    justify-content: center;
+    padding: 5rem var(--px) 3rem;
+    border-right: none;
+    border-bottom: 1px solid var(--gray-200);
+  }
+}
+
 .devis-left-inner {
   max-width: 420px;
   width: 100%;
@@ -2109,6 +2119,14 @@ footer {
   display: flex;
   align-items: flex-start;
 }
+
+@media (max-width: 900px) {
+  .devis-right {
+    justify-content: center;
+    padding: 4rem var(--px);
+  }
+}
+
 .devis-card {
   background: #fff;
   border-top: 3px solid var(--zinc-900);
