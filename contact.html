@@ -8,12 +8,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .nav { background: transparent; border-bottom-color: transparent; }
+    .nav-logo img { filter: brightness(0) invert(1); }
+    .nav-link { color: rgba(255,255,255,0.78); }
+    .nav-link:hover { color: #fff; }
+    .nav-link::after { background: rgba(255,255,255,0.5); }
+    .nav-link.active { color: #fff; }
+    .nav-link.active::after { background: rgba(255,255,255,0.5); }
+    .nav-cta.btn-primary { background: #fff; color: #000; }
+    .nav-cta.btn-primary:hover { background: rgba(255,255,255,0.9); box-shadow: none; }
+    .nav-toggle .bar { background: #fff; }
+  </style>
 </head>
 <body>
 
   <nav class="nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo"><img src="images/logo_noir.svg" alt="B&B Carbon" /></a>
+      <a href="index.html" class="nav-logo"><img src="images/logo.svg" alt="B&B Carbon" /></a>
       <div class="nav-links">
         <a href="index.html" class="nav-link">Accueil</a>
         <a href="services.html" class="nav-link">Services</a>
@@ -37,11 +49,17 @@
   </div>
 
   <!-- EN-TÊTE -->
-  <section class="page-header">
-    <div class="container animate-in">
-      <span class="label">Devis Gratuit</span>
-      <h1 class="section-title">Démarrons votre <span class="text-accent">projet</span></h1>
-      <p>Remplissez le formulaire ci-dessous. Plus vous nous donnez de détails, plus notre devis sera précis. Réponse garantie sous 48h.</p>
+  <section class="services-hero">
+    <div class="services-hero-bg">
+      <img src="images/header_devis.png" alt="" aria-hidden="true" />
+    </div>
+    <div class="services-hero-inner">
+      <div class="services-hero-text animate-in">
+        <span class="services-hero-label">Devis Gratuit</span>
+        <h1 class="services-hero-title">Démarrons votre <span>projet</span></h1>
+        <div class="services-hero-divider"></div>
+        <p>Remplissez le formulaire ci-dessous. Plus vous nous donnez de détails, plus notre devis sera précis. Réponse garantie sous 48h.</p>
+      </div>
     </div>
   </section>
 

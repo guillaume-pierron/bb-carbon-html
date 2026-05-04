@@ -32,6 +32,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  /* --- Nav transparente → blanche au scroll --- */
+  const nav = document.querySelector('.nav');
+  if (nav) {
+    const onScroll = () => {
+      nav.classList.toggle('scrolled', window.scrollY > 10);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+
   /* --- Parallax hero --- */
   const heroBg = document.getElementById('hero-bg');
   if (heroBg) {

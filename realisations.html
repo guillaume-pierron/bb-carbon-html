@@ -8,6 +8,33 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .nav { background: transparent; border-bottom-color: transparent; }
+    .nav-logo img { filter: brightness(0) invert(1); }
+    .nav-link { color: rgba(255,255,255,0.78); }
+    .nav-link:hover { color: #fff; }
+    .nav-link::after { background: rgba(255,255,255,0.5); }
+    .nav-link.active { color: #fff; }
+    .nav-link.active::after { background: rgba(255,255,255,0.5); }
+    .nav-cta.btn-primary { background: #fff; color: #000; }
+    .nav-cta.btn-primary:hover { background: rgba(255,255,255,0.9); box-shadow: none; }
+    .nav-toggle .bar { background: #fff; }
+
+    .cta-carbon {
+      background-color: #0d0d0d;
+      background-image:
+        linear-gradient(45deg, rgba(255,255,255,0.06) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(255,255,255,0.06) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.06) 75%),
+        linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.06) 75%);
+      background-size: 6px 6px;
+      background-position: 0 0, 0 3px, 3px -3px, -3px 0px;
+      border-top: none;
+    }
+    .cta-carbon h2 { color: #fff; }
+    .cta-carbon p { color: rgba(255,255,255,0.6); }
+    .cta-carbon .label { color: rgba(255,255,255,0.4); }
+  </style>
 </head>
 <body>
 
@@ -37,11 +64,17 @@
   </div>
 
   <!-- EN-TÊTE -->
-  <section class="page-header">
-    <div class="container animate-in">
-      <span class="label">Portfolio</span>
-      <h1 class="section-title">Nos <span class="text-accent">réalisations</span></h1>
-      <p>Chaque projet est unique. Découvrez quelques exemples de notre travail : intérieur, extérieur, et objets custom.</p>
+  <section class="services-hero">
+    <div class="services-hero-bg">
+      <img src="images/header_realisation.png" alt="" aria-hidden="true" />
+    </div>
+    <div class="services-hero-inner">
+      <div class="services-hero-text animate-in">
+        <span class="services-hero-label">Portfolio</span>
+        <h1 class="services-hero-title">Nos <span>réalisations</span></h1>
+        <div class="services-hero-divider"></div>
+        <p>Chaque projet est unique. Découvrez quelques exemples de notre travail : intérieur, extérieur, et objets custom.</p>
+      </div>
     </div>
   </section>
 
@@ -61,8 +94,7 @@
 
         <div class="project-card wide animate-in" data-category="Intérieur">
           <div class="project-visual">
-            <div class="project-visual-pattern"></div>
-            <div class="project-visual-diamond"></div>
+            <img src="images/volant.png" alt="Habillage volant BMW M3" loading="lazy" />
             <span class="project-category-badge interior">Intérieur</span>
             <div class="project-hover-overlay"></div>
           </div>
@@ -79,8 +111,7 @@
 
         <div class="project-card animate-in" data-category="Extérieur" data-delay="60">
           <div class="project-visual">
-            <div class="project-visual-pattern"></div>
-            <div class="project-visual-diamond"></div>
+            <img src="images/206_avant.png" alt="Diffuseur Audi RS" loading="lazy" />
             <span class="project-category-badge exterior">Extérieur</span>
             <div class="project-hover-overlay"></div>
           </div>
@@ -97,8 +128,7 @@
 
         <div class="project-card animate-in" data-category="Custom" data-delay="120">
           <div class="project-visual">
-            <div class="project-visual-pattern"></div>
-            <div class="project-visual-diamond"></div>
+            <img src="images/xbox.png" alt="Manette Xbox Custom" loading="lazy" />
             <span class="project-category-badge custom">Custom</span>
             <div class="project-hover-overlay"></div>
           </div>
@@ -115,8 +145,7 @@
 
         <div class="project-card animate-in" data-category="Intérieur" data-delay="180">
           <div class="project-visual">
-            <div class="project-visual-pattern"></div>
-            <div class="project-visual-diamond"></div>
+            <img src="images/board.png" alt="Console centrale Porsche" loading="lazy" />
             <span class="project-category-badge interior">Intérieur</span>
             <div class="project-hover-overlay"></div>
           </div>
@@ -133,8 +162,7 @@
 
         <div class="project-card animate-in" data-category="Extérieur" data-delay="240">
           <div class="project-visual">
-            <div class="project-visual-pattern"></div>
-            <div class="project-visual-diamond"></div>
+            <img src="images/coque.png" alt="Coques de rétroviseurs" loading="lazy" />
             <span class="project-category-badge exterior">Extérieur</span>
             <div class="project-hover-overlay"></div>
           </div>
@@ -151,8 +179,7 @@
 
         <div class="project-card tall animate-in" data-category="Extérieur" data-delay="300">
           <div class="project-visual">
-            <div class="project-visual-pattern"></div>
-            <div class="project-visual-diamond"></div>
+            <img src="images/aile_206.png" alt="Aileron GT sur-mesure" loading="lazy" />
             <span class="project-category-badge exterior">Extérieur</span>
             <div class="project-hover-overlay"></div>
           </div>
@@ -169,8 +196,7 @@
 
         <div class="project-card wide animate-in" data-category="Intérieur" data-delay="360">
           <div class="project-visual">
-            <div class="project-visual-pattern"></div>
-            <div class="project-visual-diamond"></div>
+            <img src="images/board.png" alt="Tableau de bord Maserati" loading="lazy" />
             <span class="project-category-badge interior">Intérieur</span>
             <div class="project-hover-overlay"></div>
           </div>
@@ -187,8 +213,7 @@
 
         <div class="project-card animate-in" data-category="Custom" data-delay="420">
           <div class="project-visual">
-            <div class="project-visual-pattern"></div>
-            <div class="project-visual-diamond"></div>
+            <img src="images/bottle_creation.png" alt="Casque moto custom" loading="lazy" />
             <span class="project-category-badge custom">Custom</span>
             <div class="project-hover-overlay"></div>
           </div>
@@ -205,8 +230,7 @@
 
         <div class="project-card animate-in" data-category="Extérieur" data-delay="480">
           <div class="project-visual">
-            <div class="project-visual-pattern"></div>
-            <div class="project-visual-diamond"></div>
+            <img src="images/coque.png" alt="Prise d'air capot" loading="lazy" />
             <span class="project-category-badge exterior">Extérieur</span>
             <div class="project-hover-overlay"></div>
           </div>
@@ -228,9 +252,9 @@
   </section>
 
   <!-- CTA -->
-  <section class="cta-section" style="border-top:1px solid var(--gray-200); background:var(--gray-50);">
+  <section class="cta-section cta-carbon">
     <div class="animate-in">
-      <h2 style="color:var(--zinc-900);">Votre projet sera le prochain</h2>
+      <h2>Votre projet sera le prochain</h2>
       <p>Décrivez-nous votre idée et obtenez un devis gratuit.</p>
       <a href="contact.html" class="btn btn-primary">Lancer Mon Projet <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     </div>

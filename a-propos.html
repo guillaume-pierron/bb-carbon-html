@@ -8,12 +8,41 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .nav { background: transparent; border-bottom-color: transparent; }
+    .nav-logo img { filter: brightness(0) invert(1); }
+    .nav-link { color: rgba(255,255,255,0.78); }
+    .nav-link:hover { color: #fff; }
+    .nav-link::after { background: rgba(255,255,255,0.5); }
+    .nav-link.active { color: #fff; }
+    .nav-link.active::after { background: rgba(255,255,255,0.5); }
+    .nav-cta.btn-primary { background: #fff; color: #000; }
+    .nav-cta.btn-primary:hover { background: rgba(255,255,255,0.9); box-shadow: none; }
+    .nav-toggle .bar { background: #fff; }
+
+    .cta-carbon {
+      background-color: #0d0d0d;
+      background-image:
+        linear-gradient(45deg, rgba(255,255,255,0.06) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(255,255,255,0.06) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.06) 75%),
+        linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.06) 75%);
+      background-size: 6px 6px;
+      background-position: 0 0, 0 3px, 3px -3px, -3px 0px;
+      border-top: none;
+    }
+    .cta-carbon h2 { color: #fff; }
+    .cta-carbon p { color: rgba(255,255,255,0.6); }
+    .cta-carbon .label { color: rgba(255,255,255,0.4); }
+    .cta-carbon .btn-secondary { color: #fff; border-color: #fff; }
+    .cta-carbon .btn-secondary:hover { background: #fff; color: #000; }
+  </style>
 </head>
 <body>
 
   <nav class="nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo"><img src="images/logo_noir.svg" alt="B&B Carbon" /></a>
+      <a href="index.html" class="nav-logo"><img src="images/logo.svg" alt="B&B Carbon" /></a>
       <div class="nav-links">
         <a href="index.html" class="nav-link">Accueil</a>
         <a href="services.html" class="nav-link">Services</a>
@@ -37,11 +66,17 @@
   </div>
 
   <!-- EN-TÊTE -->
-  <section class="page-header">
-    <div class="container animate-in">
-      <span class="label">Notre Histoire</span>
-      <h1 class="section-title">L'atelier <span class="text-accent">B&B Carbon</span></h1>
-      <p>Né d'une passion pour l'automobile et la fabrication, B&B Carbon s'est imposé comme une référence dans la création de pièces carbone artisanales.</p>
+  <section class="services-hero">
+    <div class="services-hero-bg">
+      <img src="images/header_a_propos.png" alt="" aria-hidden="true" />
+    </div>
+    <div class="services-hero-inner">
+      <div class="services-hero-text animate-in">
+        <span class="services-hero-label">Notre Histoire</span>
+        <h1 class="services-hero-title">L'atelier <span>B&B Carbon</span></h1>
+        <div class="services-hero-divider"></div>
+        <p>Né d'une passion pour l'automobile et la fabrication, B&B Carbon s'est imposé comme une référence dans la création de pièces carbone artisanales.</p>
+      </div>
     </div>
   </section>
 
@@ -152,7 +187,7 @@
             </div>
             <div class="expertise-item">
               <div class="expertise-dot"></div>
-              <div><span class="expertise-item-label">Finitions :</span> <span class="expertise-item-desc">Brillant, Mat, Satin, Soft-touch</span></div>
+              <div><span class="expertise-item-label">Finitions :</span> <span class="expertise-item-desc">Brillant, Mat, Soft-touch</span></div>
             </div>
             <div class="expertise-item">
               <div class="expertise-dot"></div>
@@ -187,9 +222,9 @@
   </section>
 
   <!-- CTA -->
-  <section class="cta-section" style="border-top:1px solid var(--gray-200); background:var(--gray-50);">
+  <section class="cta-section cta-carbon">
     <div class="animate-in">
-      <h2 style="color:var(--zinc-900);">Travaillons ensemble</h2>
+      <h2>Travaillons ensemble</h2>
       <p>Votre projet mérite une attention artisanale. Contactez-nous pour discuter de votre idée.</p>
       <div style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;">
         <a href="contact.html" class="btn btn-primary">Demander un Devis <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>

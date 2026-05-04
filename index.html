@@ -9,7 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <style>
-    /* Nav sombre par défaut sur le hero */
     .nav { background: transparent; border-bottom-color: transparent; }
     .nav-logo img { filter: brightness(0) invert(1); }
     .nav-link { color: rgba(255,255,255,0.78); }
@@ -20,17 +19,21 @@
     .nav-cta.btn-primary { background: #fff; color: #000; }
     .nav-cta.btn-primary:hover { background: rgba(255,255,255,0.9); box-shadow: none; }
     .nav-toggle .bar { background: #fff; }
-    /* Nav blanche après scroll */
-    .nav.scrolled { background: #fff; border-bottom-color: var(--gray-200); }
-    .nav.scrolled .nav-logo img { filter: brightness(0); }
-    .nav.scrolled .nav-link { color: var(--gray-600); }
-    .nav.scrolled .nav-link:hover { color: var(--zinc-900); }
-    .nav.scrolled .nav-link::after { background: linear-gradient(to right, var(--accent), transparent); }
-    .nav.scrolled .nav-link.active { color: var(--accent); }
-    .nav.scrolled .nav-link.active::after { background: linear-gradient(to right, var(--accent), transparent); }
-    .nav.scrolled .nav-cta.btn-primary { background: #000; color: #fff; }
-    .nav.scrolled .nav-cta.btn-primary:hover { background: #222; box-shadow: 0 4px 16px rgba(0,0,0,0.35); }
-    .nav.scrolled .nav-toggle .bar { background: var(--zinc-900); }
+
+    .cta-carbon {
+      background-color: #0d0d0d;
+      background-image:
+        linear-gradient(45deg, rgba(255,255,255,0.06) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(255,255,255,0.06) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.06) 75%),
+        linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.06) 75%);
+      background-size: 6px 6px;
+      background-position: 0 0, 0 3px, 3px -3px, -3px 0px;
+      border-top: none;
+    }
+    .cta-carbon h2 { color: #fff; }
+    .cta-carbon p { color: rgba(255,255,255,0.6); }
+    .cta-carbon .label { color: rgba(255,255,255,0.4); }
   </style>
 </head>
 <body>
@@ -351,37 +354,12 @@
     </div>
   </section>
 
-  <!-- BARRE ATTRIBUTS -->
-  <div class="services-hero-stats">
-    <div class="services-hero-stat">
-      <div class="services-hero-stat-icon">
-        <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-      </div>
-      <strong>Sur-Mesure</strong>
-      <span>Conception 100% personnalisée selon vos besoins.</span>
-    </div>
-    <div class="services-hero-stat">
-      <div class="services-hero-stat-icon">
-        <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-      </div>
-      <strong>Performance</strong>
-      <span>Légèreté, résistance et durabilité au service de vos projets.</span>
-    </div>
-    <div class="services-hero-stat">
-      <div class="services-hero-stat-icon">
-        <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 3l1.09 3.26L16 7l-2.91 2.09L14 13l-2-1.5L10 13l.91-3.91L8 7l2.91-.74L12 3z"/><path d="M5 3l.5 1.5L7 5l-1.5.5L5 7l-.5-1.5L3 5l1.5-.5L5 3z"/><path d="M19 14l.5 1.5L21 16l-1.5.5L19 18l-.5-1.5L17 16l1.5-.5L19 14z"/></svg>
-      </div>
-      <strong>Esthétique Unique</strong>
-      <span>Un rendu haut de gamme pour un style inimitable.</span>
-    </div>
-  </div>
-
   <!-- CTA -->
-  <section class="cta-section" aria-labelledby="cta-title">
+  <section class="cta-section cta-carbon" aria-labelledby="cta-title">
     <div class="animate-in">
       <span class="label">Commencez votre projet</span>
       <h2 id="cta-title">Votre projet,<br><span class="text-accent">notre expertise</span></h2>
-      <p style="color: #fff; margin-bottom: 1rem; line-height: 1.6;">Écrivez-nous votre idée. Véhicule, pièce, style — nous vous proposons<br>une solution sur-mesure et un devis gratuit sous 48h.</p>
+      <p>Écrivez-nous votre idée. Véhicule, pièce, style — nous vous proposons<br>une solution sur-mesure et un devis gratuit sous 48h.</p>
       <a href="contact.html" class="btn btn-primary">
         Démarrer Mon Projet
         <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
