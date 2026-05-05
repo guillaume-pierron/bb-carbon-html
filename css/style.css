@@ -864,17 +864,7 @@ ul { list-style: none; }
   transition: background 0.3s;
 }
 .gallery-item:hover .gallery-hover { background: rgba(9,9,11,0.2); }
-.gallery-see {
-  opacity: 0;
-  transition: opacity 0.3s;
-  border: 1px solid rgba(255,255,255,0.25);
-  padding: 0.5rem 1rem;
-  font-size: 0.65rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: #fff;
-}
-.gallery-item:hover .gallery-see { opacity: 1; }
+.gallery-see { display: none; }
 
 /* ============================================================
    Values (home)
