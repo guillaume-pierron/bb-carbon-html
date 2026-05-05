@@ -372,15 +372,18 @@ ul { list-style: none; }
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  border: 1px solid rgba(255,255,255,0.2);
-  background: rgba(255,255,255,0.05);
-  padding: 0.5rem 1rem;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 0.5rem 1.1rem;
+  border-radius: 2rem;
   margin-bottom: 2rem;
 }
 .hero-badge-dot {
   width: 6px; height: 6px;
   border-radius: 50%;
-  background: #fff;
+  background: var(--accent);
   animation: pulse 2s infinite;
 }
 .hero-badge span {
@@ -950,6 +953,12 @@ div[style*="padding: 1.5rem"] a {
 }
 .cta-section .label { color: var(--gray-300); margin-bottom: 0.5rem; }
 .cta-section h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; color: #fff; margin-bottom: 2rem; }
+.cta-section .text-accent {
+  background: linear-gradient(135deg, #fff 0%, #94a3b8 50%, #fff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 .cta-section .btn { margin-top: 2rem; }
 .cta-section .btn-primary { background: linear-gradient(to right, var(--charcoal), var(--charcoal-light)); color: #fff; }
 .cta-section .btn-primary:hover { background: linear-gradient(to right, var(--charcoal-light), var(--charcoal-mid)); box-shadow: 0 4px 16px rgba(0,0,0,0.15); }
@@ -1125,7 +1134,7 @@ footer {
   margin: 0 0 0.1em;
 }
 .services-hero-title span {
-  background: linear-gradient(135deg, var(--zinc-900) 0%, var(--accent-light) 50%, var(--zinc-900) 100%);
+  background: linear-gradient(135deg, #fff 0%, #94a3b8 50%, #fff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -2042,6 +2051,12 @@ footer {
 }
 .values-page-section .label { color: rgba(255,255,255,0.35); }
 .values-page-section .section-title { color: #fff; }
+.values-page-section .text-accent {
+  background: linear-gradient(135deg, #fff 0%, #94a3b8 50%, #fff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 
 .values-cards {
   display: grid;
