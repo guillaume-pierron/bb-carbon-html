@@ -1764,6 +1764,33 @@ footer {
   display: block;
   border-radius: 4px;
 }
+.steps-video-wrap {
+  position: relative;
+}
+.video-play-btn {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.92);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--zinc-900);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  transition: transform 0.2s, background 0.2s;
+}
+.video-play-btn:hover {
+  transform: scale(1.08);
+  background: #fff;
+}
+.video-play-btn.hidden {
+  display: none;
+}
 
 @media (max-width: 1023px) {
   .steps-layout {
