@@ -602,6 +602,9 @@ ul { list-style: none; }
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 768px) {
+  .services-section { padding-top: 3rem; }
+}
 
 .services-bg-logo {
   position: absolute;
@@ -875,6 +878,9 @@ ul { list-style: none; }
 .values-section {
   padding: 6rem 0;
   background: #f8fafc;
+}
+@media (max-width: 768px) {
+  .values-section { padding-top: 3rem; }
 }
 .values-grid {
   display: grid;
