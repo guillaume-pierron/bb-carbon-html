@@ -402,7 +402,7 @@ ul { list-style: none; }
   margin-bottom: 1.5rem;
 }
 @media (max-width: 640px) {
-  .hero-title { font-size: clamp(3.5rem, 16vw, 5rem); }
+  .hero-title { font-size: clamp(2.5rem, 13vw, 3rem); }
 }
 .hero-title .line-white { display: block; color: #fff; }
 .hero-title .line-dim { display: block; color: rgba(255,255,255,0.4); }
@@ -1571,6 +1571,7 @@ footer {
   text-transform: uppercase;
   color: var(--zinc-900);
   display: block;
+  margin-bottom: 0.75rem;
 }
 .sv2-features {
   list-style: none;

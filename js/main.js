@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* --- Nav transparente → blanche au scroll --- */
   if (nav) {
     const onScroll = () => {
-      nav.classList.toggle('scrolled', window.scrollY > 10);
+      nav.classList.toggle('scrolled', window.scrollY > 60);
     };
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
