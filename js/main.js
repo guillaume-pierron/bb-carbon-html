@@ -54,6 +54,23 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', handleScroll, { passive: true });
   }
 
+  /* --- Lazy load vidéos --- */
+  document.querySelectorAll('video.lazy-video').forEach(video => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          video.querySelectorAll('source[data-src]').forEach(source => {
+            source.src = source.dataset.src;
+          });
+          video.load();
+          video.play();
+          observer.unobserve(video);
+        }
+      });
+    }, { rootMargin: '200px' });
+    observer.observe(video);
+  });
+
   /* --- Scroll animations (Intersection Observer) --- */
   const animElements = document.querySelectorAll('.animate-in');
   if (animElements.length) {
