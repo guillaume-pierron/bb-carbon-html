@@ -744,7 +744,7 @@ ul { list-style: none; }
    Gallery dark (home)
    ============================================================ */
 .gallery-dark {
-  padding: 6rem 0;
+  padding: 3.5rem 0 6rem;
   background: #0d0d0d;
 }
 
