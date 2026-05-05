@@ -7,18 +7,21 @@ document.addEventListener('DOMContentLoaded', () => {
   /* --- Navigation mobile --- */
   const toggle = document.getElementById('nav-toggle');
   const menu   = document.getElementById('mobile-menu');
+  const nav    = document.querySelector('.nav');
   if (toggle && menu) {
     toggle.addEventListener('click', () => {
       const open = menu.classList.toggle('open');
       toggle.classList.toggle('open', open);
       toggle.setAttribute('aria-expanded', open);
       document.body.style.overflow = open ? 'hidden' : '';
+      if (nav) nav.classList.toggle('menu-open', open);
     });
     // Fermer au clic sur un lien
     menu.querySelectorAll('a').forEach(a => {
       a.addEventListener('click', () => {
         menu.classList.remove('open');
         document.body.style.overflow = '';
+        if (nav) nav.classList.remove('menu-open');
       });
     });
   }
@@ -33,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* --- Nav transparente → blanche au scroll --- */
-  const nav = document.querySelector('.nav');
   if (nav) {
     const onScroll = () => {
       nav.classList.toggle('scrolled', window.scrollY > 10);

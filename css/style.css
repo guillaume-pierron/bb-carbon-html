@@ -223,6 +223,13 @@ ul { list-style: none; }
 .nav.scrolled .nav-cta.btn-primary:hover { background: #222; box-shadow: 0 4px 16px rgba(0,0,0,0.35); }
 .nav.scrolled .nav-toggle .bar { background: var(--zinc-900); }
 
+/* Menu mobile ouvert — force fond blanc + logo noir même sur pages transparentes */
+@media (max-width: 768px) {
+  .nav.menu-open { background: #fff !important; border-bottom-color: var(--gray-200) !important; }
+  .nav.menu-open .nav-logo img { filter: brightness(0) !important; }
+  .nav.menu-open .nav-toggle .bar { background: var(--zinc-900) !important; }
+}
+
 .nav-toggle {
   display: none;
   background: none;
