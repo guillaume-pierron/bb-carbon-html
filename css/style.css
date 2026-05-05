@@ -1732,6 +1732,10 @@ footer {
 .project-card:hover { border-color: var(--gray-400); }
 .project-card.wide { grid-column: span 2; }
 .project-card.tall { grid-row: span 2; }
+@media (min-width: 1024px) {
+  .project-card.wide { display: flex; flex-direction: column; }
+  .project-card.wide .project-visual { flex-grow: 1; aspect-ratio: unset; }
+}
 
 .project-visual {
   position: relative;
