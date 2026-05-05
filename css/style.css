@@ -535,8 +535,12 @@ ul { list-style: none; }
 }
 
 .stats-features {
+  padding: 0 0 2rem;
+}
+.stats-features-bar {
   background: var(--charcoal);
-  padding: 1.75rem 0;
+  border-radius: 0.75rem;
+  padding: 1.75rem var(--px);
 }
 .stats-features-grid {
   display: grid;
