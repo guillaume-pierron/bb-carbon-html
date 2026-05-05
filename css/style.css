@@ -466,21 +466,53 @@ ul { list-style: none; }
 /* ============================================================
    Stats
    ============================================================ */
-.stats {
-  background: var(--gray-50);
+.stats-section {
+  background: #fff;
   border-top: 1px solid var(--gray-200);
-  border-bottom: 1px solid var(--gray-200);
 }
+
+.stats-header {
+  text-align: center;
+  padding: 4rem 0 3rem;
+}
+.stats-header .label { margin-bottom: 0.75rem; }
+.stats-title {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 800;
+  color: var(--charcoal);
+  letter-spacing: -0.02em;
+  margin: 0 0 0.6rem;
+}
+.stats-subtitle {
+  font-size: 0.95rem;
+  color: var(--gray-400);
+}
+
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  padding: 3rem 0;
+  padding: 0 0 4rem;
 }
-@media (max-width: 640px) { .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; } }
+@media (max-width: 640px) { .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 2rem 1.5rem; } }
 
-.stat { text-align: center; }
-
+.stat {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+.stat-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--charcoal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.25rem;
+}
 .stat-value {
   font-size: clamp(1.6rem, 3vw, 2.4rem);
   font-weight: 800;
@@ -488,7 +520,6 @@ ul { list-style: none; }
   display: block;
   letter-spacing: -0.02em;
   line-height: 1.1;
-  margin-bottom: 0.35rem;
 }
 .stat-label {
   font-size: 0.62rem;
@@ -497,6 +528,47 @@ ul { list-style: none; }
   color: var(--gray-400);
   font-weight: 500;
 }
+
+.stats-features {
+  background: var(--charcoal);
+  padding: 1.75rem 0;
+}
+.stats-features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.stats-feature {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+.stats-feature-icon {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+}
+.stats-feature-title {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 0.2rem;
+}
+.stats-feature-desc {
+  font-size: 0.7rem;
+  color: var(--gray-400);
+  line-height: 1.4;
+}
+@media (max-width: 768px) { .stats-features-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .stats-features-grid { grid-template-columns: 1fr; } }
 
 /* ============================================================
    Services section (home)
