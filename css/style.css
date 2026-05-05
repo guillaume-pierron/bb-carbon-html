@@ -402,7 +402,7 @@ ul { list-style: none; }
   margin-bottom: 1.5rem;
 }
 @media (max-width: 640px) {
-  .hero-title { font-size: clamp(3.5rem, 16vw, 5rem); }
+  .hero-title { font-size: clamp(2.5rem, 13vw, 3rem); }
 }
 .hero-title .line-white { display: block; color: #fff; }
 .hero-title .line-dim { display: block; color: rgba(255,255,255,0.4); }
@@ -864,17 +864,7 @@ ul { list-style: none; }
   transition: background 0.3s;
 }
 .gallery-item:hover .gallery-hover { background: rgba(9,9,11,0.2); }
-.gallery-see {
-  opacity: 0;
-  transition: opacity 0.3s;
-  border: 1px solid rgba(255,255,255,0.25);
-  padding: 0.5rem 1rem;
-  font-size: 0.65rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: #fff;
-}
-.gallery-item:hover .gallery-see { opacity: 1; }
+.gallery-see { display: none; }
 
 /* ============================================================
    Values (home)
@@ -1571,6 +1561,7 @@ footer {
   text-transform: uppercase;
   color: var(--zinc-900);
   display: block;
+  margin-bottom: 0.75rem;
 }
 .sv2-features {
   list-style: none;

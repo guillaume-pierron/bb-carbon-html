@@ -6,7 +6,8 @@
   <title>B&B Carbon — Pièces en Fibre de Carbone Sur-Mesure</title>
   <meta name="description" content="B&B Carbon fabrique des pièces en fibre de carbone sur-mesure pour l'intérieur et l'extérieur automobile. Création, réparation et recouvrement carbone." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
   <link rel="stylesheet" href="css/style.css" />
   <style>
     .nav { background: transparent; border-bottom-color: transparent; }
@@ -94,6 +95,7 @@
     </a>
   </div>
 
+  <main>
   <!-- HERO -->
   <section class="hero" aria-label="Bannière principale">
     <div class="hero-bg" id="hero-bg"></div>
@@ -113,7 +115,7 @@
         <h1 class="hero-title">
           <span class="line-white">L'ART DU</span>
           <span class="line-dim">CARBONE</span>
-          <span class="line-white">SUR-MESURE</span>
+          <span class="line-white">SUR&#8209;MESURE</span>
         </h1>
         <p class="hero-desc">
           Pièces en fibre de carbone fabriquées à la main pour sublimer votre automobile.
@@ -273,7 +275,7 @@
         </a>
         <a href="services.html#custom" class="service-card animate-in" data-delay="300">
           <div class="service-img-wrap">
-            <img src="images/xbox.png" alt="Custom & Objets Uniques" class="service-img" />
+            <img src="images/xbox.jpeg" alt="Custom & Objets Uniques" class="service-img" />
           </div>
           <span class="service-num">04</span>
           <h3>Custom & Objets Uniques</h3>
@@ -410,7 +412,7 @@
             </div>
             <div>
               <h3>Qualité Artisanale</h3>
-              <p>Chaque pièce est fabriquée à la main avec des matériaux haut de gamme sélectionnés avec soin.</p>
+              <p>Un soin constant apporté aux détails et un contrôle qualité avant chaque livraison.</p>
             </div>
           </div>
           <div class="value-card" data-delay="100">
@@ -448,6 +450,8 @@
       </a>
     </div>
   </section>
+
+  </main>
 
   <!-- FOOTER -->
   <footer>
@@ -513,14 +517,5 @@
   </footer>
 
   <script src="js/main.js"></script>
-  <script>
-    (function () {
-      var nav = document.querySelector('.nav');
-      if (!nav) return;
-      function update() { nav.classList.toggle('scrolled', window.scrollY > 60); }
-      window.addEventListener('scroll', update, { passive: true });
-      update();
-    })();
-  </script>
 </body>
 </html>
