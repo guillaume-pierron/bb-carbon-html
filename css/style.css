@@ -592,8 +592,8 @@ ul { list-style: none; }
   .stats-features-bar {
     border-radius: 0;
     margin: 0 calc(-1 * (var(--px) + clamp(1rem, 3vw, 2.5rem)));
-    padding-left: calc(var(--px) + clamp(1rem, 3vw, 2.5rem));
-    padding-right: calc(var(--px) + clamp(1rem, 3vw, 2.5rem));
+    padding-left: var(--px);
+    padding-right: var(--px);
   }
 }
 
