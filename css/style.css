@@ -341,7 +341,7 @@ ul { list-style: none; }
   background-image: url('../images/header.png');
   background-size: cover;
   background-position: center 50%;
-  will-change: background-position-y;
+  will-change: transform;
 }
 
 .hero-overlay {
