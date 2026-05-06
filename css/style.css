@@ -768,6 +768,8 @@ ul { list-style: none; }
 .gallery-dark {
   padding: 3.5rem 0 6rem;
   background: #0d0d0d;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 .gallery-dark .label { color: rgba(255,255,255,0.35); }
