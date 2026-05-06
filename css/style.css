@@ -337,10 +337,14 @@ ul { list-style: none; }
 
 .hero-bg {
   position: absolute;
-  inset: 0;
+  top: -40%;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-image: url('../images/header.png');
   background-size: cover;
-  background-position: center 50%;
+  background-position: center;
+  will-change: transform;
 }
 
 .hero-overlay {
@@ -371,10 +375,8 @@ ul { list-style: none; }
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  border: 1px solid rgba(255,255,255,0.18);
-  background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.22);
+  background: rgba(255,255,255,0.14);
   padding: 0.5rem 1.1rem;
   border-radius: 2rem;
   margin-bottom: 2rem;
@@ -384,6 +386,7 @@ ul { list-style: none; }
   border-radius: 50%;
   background: var(--accent);
   animation: pulse 2s infinite;
+  will-change: opacity;
 }
 .hero-badge span {
   font-size: 0.65rem;
@@ -463,6 +466,7 @@ ul { list-style: none; }
   height: 48px;
   background: linear-gradient(to bottom, rgba(255,255,255,0.5), transparent);
   animation: pulse 2s infinite;
+  will-change: opacity;
 }
 
 /* ============================================================
@@ -695,6 +699,7 @@ ul { list-style: none; }
   object-fit: cover;
   margin-bottom: 1.5rem;
   transition: transform 0.7s ease;
+  will-change: transform;
 }
 .service-card:hover .service-img { transform: scale(1.05); }
 .service-img-wrap {
@@ -824,6 +829,7 @@ ul { list-style: none; }
   width: 100%; height: 100%;
   object-fit: cover;
   transition: transform 0.7s ease;
+  will-change: transform;
 }
 .gallery-item:hover img { transform: scale(1.06); }
 
@@ -901,7 +907,7 @@ ul { list-style: none; }
   padding: 1.75rem;
   border: 1px solid rgba(148, 163, 184, 0.35);
   background: #fff;
-  transition: all 0.3s, transform 0.3s;
+  transition: border-color 0.3s, background 0.3s, box-shadow 0.3s, transform 0.3s;
   box-shadow: none;
   border-radius: 2px;
 }
@@ -2422,6 +2428,7 @@ footer {
   opacity: 0;
   transform: translateY(24px);
   transition: opacity 0.7s ease, transform 0.7s ease;
+  will-change: transform, opacity;
 }
 .animate-in.from-left { transform: translateX(-24px); }
 .animate-in.from-right { transform: translateX(24px); }

@@ -47,9 +47,14 @@ document.addEventListener('DOMContentLoaded', () => {
   /* --- Parallax hero --- */
   const heroBg = document.getElementById('hero-bg');
   if (heroBg) {
+    let rafId = null;
     const handleScroll = () => {
-      const y = window.scrollY;
-      heroBg.style.backgroundPositionY = `calc(50% + ${y * 0.35}px)`;
+      if (!rafId) {
+        rafId = requestAnimationFrame(() => {
+          heroBg.style.transform = `translateY(${window.scrollY * 0.35}px)`;
+          rafId = null;
+        });
+      }
     };
     window.addEventListener('scroll', handleScroll, { passive: true });
   }
