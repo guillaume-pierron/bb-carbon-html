@@ -44,15 +44,15 @@ document.addEventListener('DOMContentLoaded', () => {
     onScroll();
   }
 
-  /* --- Parallax hero --- */
-  const heroBg = document.getElementById('hero-bg');
-  if (heroBg) {
-    const handleScroll = () => {
-      const y = window.scrollY;
-      heroBg.style.backgroundPositionY = `calc(50% + ${y * 0.35}px)`;
-    };
-    window.addEventListener('scroll', handleScroll, { passive: true });
-  }
+  /* --- Parallax hero (désactivé temporairement pour test perf) --- */
+  // const heroBg = document.getElementById('hero-bg');
+  // if (heroBg) {
+  //   const handleScroll = () => {
+  //     const y = window.scrollY;
+  //     heroBg.style.backgroundPositionY = `calc(50% + ${y * 0.35}px)`;
+  //   };
+  //   window.addEventListener('scroll', handleScroll, { passive: true });
+  // }
 
   /* --- Lazy load vidéos avec bouton play --- */
   document.querySelectorAll('video.lazy-video').forEach(video => {

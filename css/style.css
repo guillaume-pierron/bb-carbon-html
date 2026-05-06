@@ -2074,13 +2074,6 @@ footer {
 .values-page-section {
   padding: 6rem 0;
   background-color: #0d0d0d;
-  background-image:
-    linear-gradient(45deg, rgba(255,255,255,0.06) 25%, transparent 25%),
-    linear-gradient(-45deg, rgba(255,255,255,0.06) 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.06) 75%),
-    linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.06) 75%);
-  background-size: 6px 6px;
-  background-position: 0 0, 0 3px, 3px -3px, -3px 0px;
 }
 .values-page-section .label { color: rgba(255,255,255,0.35); }
 .values-page-section .section-title { color: #fff; }
@@ -2190,14 +2183,6 @@ footer {
 /* Colonne gauche — dark carbon */
 /* Colonne gauche — light panel */
 .devis-left {
-  background-color: #0d0d0d;
-  background-image:
-    linear-gradient(45deg, rgba(255,255,255,0.06) 25%, transparent 25%),
-    linear-gradient(-45deg, rgba(255,255,255,0.06) 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.06) 75%),
-    linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.06) 75%);
-  background-size: 6px 6px;
-  background-position: 0 0, 0 3px, 3px -3px, -3px 0px;
   background-color: #fff;
   border-right: 1px solid var(--gray-200);
   padding: 5rem clamp(2rem, 5vw, 5rem) 5rem clamp(2rem, 6vw, 6rem);
@@ -2381,13 +2366,6 @@ footer {
 .faq-section {
   padding: 5rem 0;
   background-color: #0d0d0d;
-  background-image:
-    linear-gradient(45deg, rgba(255,255,255,0.06) 25%, transparent 25%),
-    linear-gradient(-45deg, rgba(255,255,255,0.06) 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.06) 75%),
-    linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.06) 75%);
-  background-size: 6px 6px;
-  background-position: 0 0, 0 3px, 3px -3px, -3px 0px;
 }
 .faq-header { text-align: center; margin-bottom: 3rem; }
 .faq-header .label { color: rgba(255,255,255,0.35); }
