@@ -54,21 +54,43 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', handleScroll, { passive: true });
   }
 
-  /* --- Lazy load vidéos --- */
+  /* --- Lazy load vidéos avec bouton play --- */
   document.querySelectorAll('video.lazy-video').forEach(video => {
+    const btn = video.parentElement.querySelector('.video-play-btn');
+    let loaded = false;
+
+    const loadVideo = () => {
+      if (loaded) return;
+      loaded = true;
+      video.querySelectorAll('source[data-src]').forEach(source => {
+        source.src = source.dataset.src;
+      });
+      video.load();
+    };
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          video.querySelectorAll('source[data-src]').forEach(source => {
-            source.src = source.dataset.src;
-          });
-          video.load();
-          video.play();
+          loadVideo();
           observer.unobserve(video);
         }
       });
     }, { rootMargin: '200px' });
     observer.observe(video);
+
+    const playVideo = () => {
+      loadVideo();
+      video.play().then(() => btn && btn.classList.add('hidden')).catch(() => {});
+    };
+
+    if (btn) {
+      btn.addEventListener('click', playVideo);
+      video.addEventListener('pause', () => btn.classList.remove('hidden'));
+      video.addEventListener('click', () => {
+        if (video.paused) playVideo();
+        else video.pause();
+      });
+    }
   });
 
   /* --- Scroll animations (Intersection Observer) --- */
