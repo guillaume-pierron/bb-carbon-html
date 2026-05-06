@@ -44,21 +44,24 @@ document.addEventListener('DOMContentLoaded', () => {
     onScroll();
   }
 
-  /* --- Parallax hero (désactivé temporairement pour test perf) --- */
-  // const heroBg = document.getElementById('hero-bg');
-  // if (heroBg) {
-  //   const handleScroll = () => {
-  //     const y = window.scrollY;
-  //     heroBg.style.backgroundPositionY = `calc(50% + ${y * 0.35}px)`;
-  //   };
-  //   window.addEventListener('scroll', handleScroll, { passive: true });
-  // }
+  /* --- Parallax hero --- */
+  const heroBg = document.getElementById('hero-bg');
+  if (heroBg) {
+    const handleScroll = () => {
+      const y = window.scrollY;
+      heroBg.style.backgroundPositionY = `calc(50% + ${y * 0.35}px)`;
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+  }
 
   /* --- Lazy load vidéos avec bouton play --- */
   document.querySelectorAll('video.lazy-video').forEach(video => {
     const btn = video.parentElement.querySelector('.video-play-btn');
+    let loaded = false;
 
     const loadVideo = () => {
+      if (loaded) return;
+      loaded = true;
       video.querySelectorAll('source[data-src]').forEach(source => {
         source.src = source.dataset.src;
       });
@@ -75,15 +78,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { rootMargin: '200px' });
     observer.observe(video);
 
+    const playVideo = () => {
+      loadVideo();
+      video.play().then(() => btn && btn.classList.add('hidden')).catch(() => {});
+    };
+
     if (btn) {
-      btn.addEventListener('click', () => {
-        video.play();
-        btn.classList.add('hidden');
-      });
+      btn.addEventListener('click', playVideo);
       video.addEventListener('pause', () => btn.classList.remove('hidden'));
       video.addEventListener('click', () => {
-        if (video.paused) { video.play(); btn.classList.add('hidden'); }
-        else { video.pause(); }
+        if (video.paused) playVideo();
+        else video.pause();
       });
     }
   });
