@@ -1447,6 +1447,9 @@ footer {
   object-position: center;
   display: block;
 }
+#recouvrement .sv2-product-img img {
+  object-position: center top;
+}
 @media (min-width: 900px) {
   .sv2-product-img {
     flex: 0 0 45%;
